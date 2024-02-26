@@ -513,3 +513,13 @@ export const works = [
   },
 ];
 
+export const contacts = [
+  { link: 'mailto:fabio.ottaviani@gmail.com', name: 'Email: fabio.ottaviani@gmail.com' },
+  { link: 'tel:+393490664806', name: 'Mobile Phone: +39 349 0664806' },
+  { link: 'https://www.linkedin.com/in/fabio-ottaviani-82b0776/', name: 'Linkedin' },
+  { link: 'https://instagram.com/supahfunk', name: 'Instagram' },
+  { link: 'https://twitter.com/supahfunk', name: 'Twitter' },
+  { link: 'https://dribbble.com/supahfunk', name: 'Dribbble' },
+  { link: 'https://codepen.io/supah', name: 'Codepen' },
+  { link: 'https://www.shadertoy.com/user/supah', name: 'Shadertoy' },
+];
