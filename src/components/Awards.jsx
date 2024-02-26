@@ -1,7 +1,18 @@
+import { awards as data } from 'utils/data';
+
 export const Awards = () => {
-  return <div>Awards</div>;
+  return (
+    <section>
+      <h2>Awards</h2>
+      <ul>
+        {data.map((award, i) => (
+          <Award key={`awards-${i}`} award={award} />
+        ))}
+      </ul>
+    </section>
+  );
 };
 
-export const Award = () => {
-  return <div>Award</div>;
+export const Award = ({ award }) => {
+  return <li>{award}</li>;
 };
