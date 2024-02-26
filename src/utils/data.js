@@ -513,6 +513,8 @@ export const works = [
   },
 ];
 
+export const awards = ['1x FWAWWWARDS', '9x Awwwards', '10x FWA', '11x CSSDA', '12x DDA', '8x IKA', '11x WebAward'];
+
 export const contacts = [
   { link: 'mailto:fabio.ottaviani@gmail.com', name: 'Email: fabio.ottaviani@gmail.com' },
   { link: 'tel:+393490664806', name: 'Mobile Phone: +39 349 0664806' },
