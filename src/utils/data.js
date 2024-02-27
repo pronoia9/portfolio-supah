@@ -47,93 +47,96 @@ export const experiences = [
   },
 ];
 
-export const showcase = [
-  {
-    name: 'Nascent Design',
-    link: 'https://nascentdesign.com',
-    image: 'images/nascentdesign.webp',
-  },
-  {
-    name: 'Boom&bloom',
-    link: 'https://boomandbloom.com',
-    image: 'images/boomandbloom.webp',
-  },
-  {
-    name: 'Studiogusto.com',
-    link: 'https://studiogusto.com',
-    image: 'images/studiogusto.webp',
-  },
-  {
-    name: 'Seacat - Rossinavi',
-    link: 'https://seacat.rossinavi.it',
-    image: 'images/seacat.webp',
-  },
-  {
-    name: 'Blue - Rossinavi',
-    link: 'https://blue.rossinavi.it',
-    image: 'images/blue.webp',
-  },
-  {
-    name: 'Peptone',
-    link: 'https://peptone.io',
-    image: 'images/peptone.webp',
-  },
-  // {
-  //   name: 'Beauty Sphere',
-  //   link: 'https://beautysphere.com',
-  //   image: 'images/beautysphere.webp'
-  // },
-  {
-    name: 'Ghost Unicorns',
-    link: 'https://www.ghostunicorns.com',
-    image: 'images/ghostunicorns.webp',
-  },
-  // {
-  //   name: 'Sterling',
-  //   link: 'https://www.sterling.it/en',
-  //   image: 'images/sterling.webp'
-  // },
-  // {
-  //   name: 'Asics - Mindup Lifter',
-  //   link: 'https://minduplifter.asics.com',
-  //   image: 'images/asics.webp'
-  // },
-  /*  {
+export const showcase = {
+  title: 'Selected Works',
+  subtitle: 'A selection of projects from 2021 to 2024 in which I collaborate as fullstack/creative developer.',
+  data: [
+    {
+      name: 'Nascent Design',
+      link: 'https://nascentdesign.com',
+      image: 'images/nascentdesign.webp',
+    },
+    {
+      name: 'Boom&bloom',
+      link: 'https://boomandbloom.com',
+      image: 'images/boomandbloom.webp',
+    },
+    {
+      name: 'Studiogusto.com',
+      link: 'https://studiogusto.com',
+      image: 'images/studiogusto.webp',
+    },
+    {
+      name: 'Seacat - Rossinavi',
+      link: 'https://seacat.rossinavi.it',
+      image: 'images/seacat.webp',
+    },
+    {
+      name: 'Blue - Rossinavi',
+      link: 'https://blue.rossinavi.it',
+      image: 'images/blue.webp',
+    },
+    {
+      name: 'Peptone',
+      link: 'https://peptone.io',
+      image: 'images/peptone.webp',
+    },
+    // {
+    //   name: 'Beauty Sphere',
+    //   link: 'https://beautysphere.com',
+    //   image: 'images/beautysphere.webp'
+    // },
+    {
+      name: 'Ghost Unicorns',
+      link: 'https://www.ghostunicorns.com',
+      image: 'images/ghostunicorns.webp',
+    },
+    // {
+    //   name: 'Sterling',
+    //   link: 'https://www.sterling.it/en',
+    //   image: 'images/sterling.webp'
+    // },
+    // {
+    //   name: 'Asics - Mindup Lifter',
+    //   link: 'https://minduplifter.asics.com',
+    //   image: 'images/asics.webp'
+    // },
+    /*  {
     name: 'Coca Cola - Game <em>(view it on mobile)</em>',
     link: 'http://cocacola.wearetesting.it',
     image: 'images/cocacola.webp'
   }, */
-  // {
-  //   name: 'Oneiric - Rossinavi',
-  //   link: 'https://oneiric.rossinavi.it',
-  //   image: 'images/oneiric.webp'
-  // },
-  // {
-  //   name: 'Sgrappa',
-  //   link: 'https://www.sgrappa.com',
-  //   image: 'images/sgrappa.webp'
-  // },
-  /* {
+    // {
+    //   name: 'Oneiric - Rossinavi',
+    //   link: 'https://oneiric.rossinavi.it',
+    //   image: 'images/oneiric.webp'
+    // },
+    // {
+    //   name: 'Sgrappa',
+    //   link: 'https://www.sgrappa.com',
+    //   image: 'images/sgrappa.webp'
+    // },
+    /* {
     name: 'Marison Ray',
     link: 'https://www.marisonray.com',
     image: 'images/marisonray.webp'
   }, */
-  /* {
+    /* {
     name: 'Henge',
     link: 'https://www.henge07.com',
     image: 'images/henge.webp'
   }, */
-  /* {
+    /* {
     name: 'Turn',
     link: 'https://www.turnhr.tech',
     image: 'images/turn.webp',
   }, */
-  // {
-  //   name: 'Play 2',
-  //   link: 'https://play2.studiogusto.com',
-  //   image: 'images/play2.webp',
-  // },
-  /* {
+    // {
+    //   name: 'Play 2',
+    //   link: 'https://play2.studiogusto.com',
+    //   image: 'images/play2.webp',
+    // },
+    /* {
     name: 'Fabrizio Milesi',
     link: 'https://fabriziomilesi.com',
     image: 'images/fabriziomilesi.webp',
@@ -143,7 +146,8 @@ export const showcase = [
     link: 'https://www.platek.eu',
     image: 'images/platek.webp',
   }, */
-];
+  ],
+};
 
 export const works = [
   /* {
