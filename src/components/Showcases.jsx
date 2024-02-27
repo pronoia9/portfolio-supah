@@ -2,17 +2,17 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 // import HTMLParse from 'react-html-parser';
 
-import { works as data } from 'utils/data';
+import { showcase as data } from 'utils/data';
 
 export const Showcases = () => {
   return (
     <section>
-      <h2>Selected Works</h2>
-      <p>A selection of projects from 2021 to 2024 in which I collaborate as fullstack/creative developer.</p>
+      <h2>{data.title}</h2>
+      <p>{data.subtitle}</p>
       <div className='works'>
-        {data.map((work, i) => (
-          <div className='work' key={i.toString()}>
-            <Showcase image={work.image} link={work.link} name={work.name} />
+        {data.data.map((work, i) => (
+          <div className='work' key={`showcase-${i}`}>
+            <Showcase {...work} />
           </div>
         ))}
       </div>
