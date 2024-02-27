@@ -1,3 +1,12 @@
+export const intro = {
+  title: 'My name is Fabio Ottaviani, aka Supah, short of Supahfunk.',
+  subtitle: [
+    'I am an italian multidisciplinary creative frontend developer with over 20 years work experience with a stroke background as a designer.',
+    'I have a creative mind inclined to learn something new everyday to develop solutions and experiences with a strong visual impact.',
+    'I love to work with a great incredible team to build together the next future.',
+    "I'm actually working as a frontend developer with threejs, glsl, react, nextjs at studiogusto.",
+  ],
+};
 export const showcase = [
   {
     name: 'Nascent Design',
