@@ -7,6 +7,7 @@ export const intro = {
     "I'm actually working as a frontend developer with threejs, glsl, react, nextjs at studiogusto.",
   ],
 };
+
 export const showcase = [
   {
     name: 'Nascent Design',
