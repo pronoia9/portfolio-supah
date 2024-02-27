@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import gsap from 'gsap';
 
-import { Works, Experiences, Showcases, Intro, Publications, Contacts } from 'components';
+import { Works, Experiences, Showcases, Intro, Publications, Contacts, Awards } from 'components';
 
 function App() {
   useEffect(() => {
@@ -20,6 +20,7 @@ function App() {
       <Showcases />
       <Works />
       <Publications />
+      <Awards />
       <Contacts />
       <br />
       <br />
