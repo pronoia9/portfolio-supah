@@ -8,6 +8,45 @@ export const intro = {
   ],
 };
 
+export const experiences = [
+  {
+    year: 'nov 2018 - now',
+    position: 'Fullstack &amp; Creative Developer',
+    company: 'Studiogusto',
+    link: 'https://www.studiogusto.com/',
+  },
+  {
+    year: 'jan 2022 - now',
+    position: 'Teacher - Webgl &amp; Creative Development',
+    company: 'NID - Nuovo Istituto Design',
+    link: 'https://www.nuovoistitutodesign.it/',
+  },
+  {
+    year: 'oct 2021 - dec 2021',
+    position: 'Senior Creative Developer',
+    company: 'AKQA',
+    link: 'https://www.akqa.com/',
+  },
+  {
+    year: 'feb 2021',
+    position: 'Teacher',
+    company: 'Awwwards Academy',
+    link: 'https://www.awwwards.com/academy/course/impress-everyone-with-a-3d-particle-scene-starting-from-bad-models',
+  },
+  {
+    year: 'feb 2005 - oct 2018',
+    position: 'Web Designer &amp; Developer',
+    company: 'Websolute',
+    link: 'https://www.websolute.com/',
+  },
+  {
+    year: 'gen 2002 - feb 2005',
+    position: 'Freelance Web Designer &amp; Developer',
+    company: 'N/A',
+    link: null,
+  },
+];
+
 export const showcase = [
   {
     name: 'Nascent Design',
