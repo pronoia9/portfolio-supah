@@ -9,8 +9,8 @@ export const Works = () => {
         {data.map((exp, i) => {
           const num = i + 1 < 10 ? `0${i + 1}` : i + 1;
           return (
-            <div className='experiment' key={i.toString()}>
-              <Work image={exp.image} link={exp.link} name={`<em>${num}</em> ${exp.name}`} />
+            <div className='experiment' key={`experiment-${i}`}>
+              <Work name={`<em>${num}</em> ${exp.name}`} {...exp} />
             </div>
           );
         })}
