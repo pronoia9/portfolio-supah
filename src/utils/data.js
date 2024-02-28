@@ -566,6 +566,21 @@ export const works = [
   },
 ];
 
+export const publications = [
+  {
+    title: 'Awwwards Course',
+    description: 'Impress everyone with a 3D particle scene with Blender and Three.js',
+    date: 'feb 2021',
+    link: 'https://www.awwwards.com/academy/course/impress-everyone-with-a-3d-particle-scene-starting-from-bad-models',
+  },
+  {
+    title: 'Codrops Tutorial',
+    description: 'Building a WebGL Carousel with React Three Fiber and GSAP',
+    date: 'apr 2023',
+    link: 'https://tympanus.net/codrops/2023/04/27/building-a-webgl-carousel-with-react-three-fiber-and-gsap/',
+  },
+];
+
 export const awards = ['1x FWAWWWARDS', '9x Awwwards', '10x FWA', '11x CSSDA', '12x DDA', '8x IKA', '11x WebAward'];
 
 export const contacts = [
