@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import gsap from 'gsap';
 
-import { Works, Experiences, Showcases, Intro, Publications, Contacts, Awards } from 'components';
+import { Works, Experiences, Showcases, Intro, Publications, Contacts, Awards } from '/components';
 
 function App() {
   useEffect(() => {
