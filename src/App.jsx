@@ -16,12 +16,12 @@ function App() {
   return (
     <div>
       <Intro />
-      <Experiences />
-      <Showcases />
-      <Works />
-      <Publications />
-      <Awards />
-      <Contacts />
+      {/* <Experiences /> */}
+      {/* <Showcases /> */}
+      {/* <Works /> */}
+      {/* <Publications /> */}
+      {/* <Awards /> */}
+      {/* <Contacts /> */}
       <br />
       <br />
       <br />
