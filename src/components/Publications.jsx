@@ -1,4 +1,4 @@
-import { publications as data } from 'utils/data';
+import { publications as data } from '/src/utils/data';
 
 export const Publications = () => {
   return (
