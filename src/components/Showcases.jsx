@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 // import HTMLParse from 'react-html-parser';
 
-import { showcase as data } from 'utils/data';
+import { showcase as data } from '/src/utils/data';
 
 export const Showcases = () => {
   return (
