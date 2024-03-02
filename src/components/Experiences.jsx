@@ -1,4 +1,4 @@
-import { experiences as data } from 'utils/data';
+import { experiences as data } from '/src/utils/data';
 
 export const Experiences = () => {
   return (
