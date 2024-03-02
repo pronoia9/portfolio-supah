@@ -1,4 +1,4 @@
-import { showcase as data } from "utils/data";
+import { showcase as data } from "/src/utils/data";
 
 export const Works = () => {
   return (
