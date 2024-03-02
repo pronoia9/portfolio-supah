@@ -1,4 +1,4 @@
-import { contacts as data } from 'utils/data';
+import { contacts as data } from '/src/utils/data';
 
 export const Contacts = () => {
   return (
