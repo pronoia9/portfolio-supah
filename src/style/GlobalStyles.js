@@ -3,26 +3,19 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+  
   @font-face {
-    font-family: 'Matter';
-    font-weight: 500;
-    font-style: normal;
-    src: url('/src/assets/matter-medium.woff2') format("woff2");
-    font-display: swap
-  }
-
-  @font-face {
-    font-family: 'Matter Light';
-    font-weight: 300;
-    font-style: normal;
-    src: url('/src/assets/matter-light.woff2') format("woff2");
-    font-display: swap
+    font-family: Matter;
+    src: url("/src/assets/MatterTRIALVF-Uprights.ttf") format("truetype supports variations"),
+        url("/src/assets/MatterTRIALVF-Uprights.ttf") format("truetype-variations");
+    font-weight: 100 1000;
   }
 
   :root {
     --c-background: ${({ theme }) => theme.background};    
     --c-font: ${({ theme }) => theme.font};    
-    --font: 'Matter';
+    --font: Matter;
+    --font-fallback: Helvetica,Arial,sans-serif;
   }
 
   *,:after,:before {
@@ -38,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
     color: #000;
     margin: 0;
     padding: 0;
-    font-family: Matter,Helvetica,Arial,sans-serif;
+    font-family: var(--font), var(--font-fallback);
     font-size: 1.6rem;
     font-weight: 300
   }
