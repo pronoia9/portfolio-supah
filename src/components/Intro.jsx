@@ -8,7 +8,6 @@ export const Intro = () => {
   const $svg = useRef();
   const $intro = useRef();
   const $animate = useRef();
-  const jam3 = false;
 
   const handleResize = () => {
     const width = $root.current.clientWidth;
@@ -31,7 +30,7 @@ export const Intro = () => {
     }
 
     gsap.set($svg.current, { opacity: 1 });
-    gsap.to($intro.current, { opacity: 1, delay: jam3 ? 3 : 2, ease: 'power3.out', duration: 2 });
+    gsap.to($intro.current, { opacity: 1, delay: 2, ease: 'power3.out', duration: 2 });
   }, []);
 
   useEffect(() => {
@@ -61,23 +60,6 @@ export const Intro = () => {
             className='cls-1'
             d='M325.09,41H334c19.44.69,33.08,15.37,33.08,35.75,0,20.88-14.31,35.78-34.52,35.78-20.37,0-34.52-14.9-34.52-35.78,0-20.1,13.12-34.67,32.28-35.72'
           />
-
-          {jam3 && (
-            <>
-              <path className='cls-2' d='M436.46,103.56s13,7,23.74,7c0,0,19.76,1.43,32.47-24,1.13-4.52,1-75.42,1-75.42H461.48' />
-              <path
-                className='cls-2'
-                d='M605.33,70.51S597.42,30.8,563.54,30.8s-37.27,40.94-37.27,40.94,3.67,38.66,37,38.66c0,0,32.18-.54,39.53-33.58l2.54-14.68'
-              />
-              <line className='cls-2' x1='603.91' y1='18.94' x2='603.91' y2='120.56' />
-              <line className='cls-2' x1='642.87' y1='18.94' x2='642.87' y2='119.98' />
-              <path className='cls-2' d='M646.27,57.62s4.8-26.82,27.67-26.82,28.19,18.64,28.19,25.13V120.1' />
-              <path className='cls-2' d='M706.41,54s.84-23.15,28.52-23.15c28.51,0,27.1,29.48,27.1,29.48V120' />
-              <line className='cls-2' x1='787.67' y1='11.56' x2='825.11' y2='11.56' />
-              <line className='cls-2' x1='866.47' y1='7.96' x2='817.59' y2='56.83' />
-              <path className='cls-2' d='M854,53.33s9.22,9.9,9.22,29.76c0,23.38-26.88,26.77-32.14,26.77S797,101.63,797,75.39' />
-            </>
-          )}
         </g>
         <g>
           <circle className='cls-3' cx='565.18' cy='70.53' r='29.68' transform='translate(-2.85 112.32) rotate(-11.32)' />
@@ -89,6 +71,7 @@ export const Intro = () => {
           />
         </g>
       </svg>
+      
       <div className='intro' ref={$intro}>
         <strong>{data.title}</strong>
         <br />
