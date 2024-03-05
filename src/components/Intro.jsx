@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
-import { useWindowEventListener } from 'rooks';
 import gsap from 'gsap';
+
+import { intro as data } from '/src/utils/data';
 
 export const Intro = () => {
   const $root = useRef();
@@ -33,7 +34,12 @@ export const Intro = () => {
     gsap.to($intro.current, { opacity: 1, delay: jam3 ? 3 : 2, ease: 'power3.out', duration: 2 });
   }, []);
 
-  useWindowEventListener('resize', handleResize);
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div ref={$root}>
@@ -84,19 +90,17 @@ export const Intro = () => {
         </g>
       </svg>
       <div className='intro' ref={$intro}>
-        <strong>My name is Fabio Ottaviani, aka Supah, short of Supahfunk.</strong>
+        <strong>{data.title}</strong>
         <br />
-        I am an italian multidisciplinary creative frontend developer with over 20 years work experience with a stroke background as a designer.
-        <br />
-        I have a creative mind inclined to learn something new everyday to develop solutions and experiences with a strong visual impact.
-        <br />
-        I love to work with a great incredible team to build together the next future.
-        <br />
-        Im actually working as a frontend developer with threejs, glsl, react, nextjs at{' '}
-        <a href='https://studiogusto.com' target='_blank'>
-          studiogusto
-        </a>
-        .
+        {data.subtitle.map((sub, i) => (
+          <span key={`intro-sub-${i}`}>
+            {sub}
+            {
+              i < data.subtitle.length - 1 && <br />
+              // : <a href='https://studiogusto.com' target='_blank'>studiogusto</a
+            }
+          </span>
+        ))}
       </div>
     </div>
   );
