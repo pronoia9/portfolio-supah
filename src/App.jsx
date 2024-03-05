@@ -30,7 +30,7 @@ function App() {
       <GlobalStyles />
       <div>
         <Intro />
-        {/* <Experiences /> */}
+        <Experiences />
         {/* <Showcases /> */}
         {/* <Works /> */}
         {/* <Publications /> */}
