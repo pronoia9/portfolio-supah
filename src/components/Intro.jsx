@@ -71,17 +71,15 @@ export const Intro = () => {
           />
         </g>
       </svg>
-      
+
       <div className='intro' ref={$intro}>
         <strong>{data.title}</strong>
         <br />
         {data.subtitle.map((sub, i) => (
           <span key={`intro-sub-${i}`}>
             {sub}
-            {
-              i < data.subtitle.length - 1 && <br />
-              // : <a href='https://studiogusto.com' target='_blank'>studiogusto</a
-            }
+            {i < data.subtitle.length - 1 && <br />}
+            {/* <a href='https://studiogusto.com' target='_blank'>studiogusto</a> */}
           </span>
         ))}
       </div>
