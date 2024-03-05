@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-// import { useWindowEventListener } from 'rooks';
+import { useWindowEventListener } from 'rooks';
 import gsap from 'gsap';
 
 export const Intro = () => {
@@ -33,7 +33,7 @@ export const Intro = () => {
     gsap.to($intro.current, { opacity: 1, delay: jam3 ? 3 : 2, ease: 'power3.out', duration: 2 });
   }, []);
 
-  // useWindowEventListener('resize', handleResize);
+  useWindowEventListener('resize', handleResize);
 
   return (
     <div ref={$root}>
