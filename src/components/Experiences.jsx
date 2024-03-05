@@ -16,12 +16,12 @@ export const Experience = ({ year, position, company, link }) => {
     <div className='cv-work'>
       <div className='years'>{year}</div>
       <h3>
-        ${position}
+        {position}
         {company && (
           <>
             {' '}@{' '}
             <a href={link} target='_blank'>
-              ${company}
+              {company}
             </a>
           </>
         )}
