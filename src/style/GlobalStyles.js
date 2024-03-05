@@ -219,45 +219,8 @@ const GlobalStyles = createGlobalStyle`
     pointer-events: none
   }
 
-  .intro,section {
+  section {
     opacity: 0
-  }
-
-  .intro {
-    margin-top: 6rem;
-    font-size: 2rem;
-    line-height: 1.3
-  }
-
-  .intro strong {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: .5rem;
-    font-weight: 300
-  }
-
-  @media(max-width: 440px) {
-    .intro strong {
-      font-size:2.6rem
-    }
-  }
-
-  .cls-1,.cls-2 {
-    fill: none;
-    stroke: #000;
-    stroke-miterlimit: 10
-  }
-
-  .cls-1 {
-    stroke-width: 21px
-  }
-
-  .cls-2 {
-    stroke-width: 25px
-  }
-
-  .cls-3 {
-    fill: #fff
   }
 
   .cv-work {
