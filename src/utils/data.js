@@ -11,13 +11,13 @@ export const intro = {
 export const experiences = [
   {
     year: 'nov 2018 - now',
-    position: 'Fullstack &; Creative Developer',
+    position: 'Fullstack & Creative Developer',
     company: 'Studiogusto',
     link: 'https://www.studiogusto.com/',
   },
   {
     year: 'jan 2022 - now',
-    position: 'Teacher - Webgl &; Creative Development',
+    position: 'Teacher - Webgl & Creative Development',
     company: 'NID - Nuovo Istituto Design',
     link: 'https://www.nuovoistitutodesign.it/',
   },
@@ -35,13 +35,13 @@ export const experiences = [
   },
   {
     year: 'feb 2005 - oct 2018',
-    position: 'Web Designer &; Developer',
+    position: 'Web Designer & Developer',
     company: 'Websolute',
     link: 'https://www.websolute.com/',
   },
   {
     year: 'gen 2002 - feb 2005',
-    position: 'Freelance Web Designer &; Developer',
+    position: 'Freelance Web Designer & Developer',
     company: 'N/A',
     link: null,
   },
