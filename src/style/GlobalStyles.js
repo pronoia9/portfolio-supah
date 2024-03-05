@@ -223,26 +223,6 @@ const GlobalStyles = createGlobalStyle`
     opacity: 0
   }
 
-  .cv-work {
-    display: block;
-    padding: 2rem 0;
-    font-size: 1.6rem;
-    border-bottom: 1px solid #000
-  }
-
-  .cv-work h3 {
-    font-size: 1.8rem
-  }
-
-  .cv-work .years {
-    font-size: 1.4rem;
-    margin-bottom: 3px
-  }
-
-  .cv-work a {
-    border-bottom: 1px dashed #000
-  }
-
   ul {
     margin: 0;
     padding: 0
