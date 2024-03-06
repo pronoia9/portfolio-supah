@@ -100,26 +100,24 @@ const Container = styled.div`
     margin-top: -1px;
     display: flex;
     align-items: center;
-  }
 
-  a:visited:after {
-    color: #000;
-  }
+    &:visited:after {
+      color: #000;
+    }
 
-  a:after {
-    content: 'âœ“';
-    position: absolute;
-    right: 10px;
-    color: #fff;
-  }
-
-  @media (max-width: 440px) {
-    a:after {
-      -webkit-transform: none !important;
-      transform: none !important;
-      font-size: 1.5rem;
-      top: 15px;
-      right: 4px;
+    &:after {
+      content: 'âœ“';
+      position: absolute;
+      right: 10px;
+      color: #fff;
+      
+      @media (max-width: 440px) {
+        -webkit-transform: none !important;
+        transform: none !important;
+        font-size: 1.5rem;
+        top: 15px;
+        right: 4px;
+      }
     }
   }
 
