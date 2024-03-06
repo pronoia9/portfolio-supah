@@ -6,8 +6,8 @@ const GlobalStyles = createGlobalStyle`
   
   @font-face {
     font-family: Matter;
-    src: url("/src/assets/MatterTRIALVF-Uprights.ttf") format("truetype supports variations"),
-        url("/src/assets/MatterTRIALVF-Uprights.ttf") format("truetype-variations");
+    src: url('/src/assets/MatterTRIALVF-Uprights.ttf') format('truetype supports variations'),
+        url('/src/assets/MatterTRIALVF-Uprights.ttf') format('truetype-variations');
     font-weight: 100 1000;
   }
 
