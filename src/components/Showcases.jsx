@@ -9,6 +9,7 @@ export const Showcases = () => {
     <section>
       <h2>{data.title}</h2>
       <p>{data.subtitle}</p>
+
       <div className='works'>
         {data.data.map((work, i) => (
           <div className='work' key={`showcase-${i}`}>
@@ -74,7 +75,7 @@ export const Showcase = ({ link, name, image }) => {
         {/* {HTMLParse(name)} */}
         {name}
       </span>
-      <span className='overlay' ref={$overlay}></span>
+      <span className='overlay' ref={$overlay} />
     </a>
   );
 };
