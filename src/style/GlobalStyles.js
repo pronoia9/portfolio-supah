@@ -72,69 +72,8 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 500;
     margin: 0
   }
-
-  .works .work {
-    font-size: 3rem;
-    font-weight: 500
-  }
-
-  @media(max-width: 440px) {
-    .works .work {
-      font-size:2rem
-    }
-  }
-
-  .works .work a {
-    background: #fff;
-    padding: 1rem 0;
-    display: block;
-    position: relative;
-    z-index: 1;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    margin-top: -1px;
-    display: flex;
-    align-items: center
-  }
-
-  .works .work a:visited:after {
-    color: #000
-  }
-
-  .works .work a:after {
-    content: "âœ“";
-    position: absolute;
-    right: 10px;
-    color: #fff
-  }
-
-  @media(max-width: 440px) {
-    .works .work a:after {
-      -webkit-transform:none!important;
-      transform: none!important;
-      font-size: 1.5rem;
-      top: 15px;
-      right: 4px
-    }
-  }
-
-  .works .work img {
-    width: auto;
-    height: 80px;
-    margin-right: 10px
-  }
-
-  .works .work em {
-    font-weight: 300;
-    font-size: 2rem;
-    font-style: normal
-  }
-
-  .works .work span {
-    pointer-events: none
-  }
-
-  .link,.works .work span {
+  
+  .link {
     display: inline-block
   }
 

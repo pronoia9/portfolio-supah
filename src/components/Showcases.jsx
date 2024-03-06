@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import gsap from 'gsap';
 // import HTMLParse from 'react-html-parser';
+import styled from 'styled-components';
 
 import { showcase as data } from '/src/utils/data';
 
@@ -12,9 +13,9 @@ export const Showcases = () => {
 
       <div className='works'>
         {data.data.map((work, i) => (
-          <div className='work' key={`showcase-${i}`}>
+          <Container className='work' key={`showcase-${i}`}>
             <Showcase {...work} />
-          </div>
+          </Container>
         ))}
       </div>
     </section>
@@ -79,3 +80,63 @@ export const Showcase = ({ link, name, image }) => {
     </a>
   );
 };
+
+const Container = styled.div`
+  font-size: 3rem;
+  font-weight: 500;
+
+  @media (max-width: 440px) {
+    font-size: 2rem;
+  }
+
+  a {
+    background: #fff;
+    padding: 1rem 0;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-top: -1px;
+    display: flex;
+    align-items: center;
+  }
+
+  a:visited:after {
+    color: #000;
+  }
+
+  a:after {
+    content: 'âœ“';
+    position: absolute;
+    right: 10px;
+    color: #fff;
+  }
+
+  @media (max-width: 440px) {
+    a:after {
+      -webkit-transform: none !important;
+      transform: none !important;
+      font-size: 1.5rem;
+      top: 15px;
+      right: 4px;
+    }
+  }
+
+  img {
+    width: auto;
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  em {
+    font-weight: 300;
+    font-size: 2rem;
+    font-style: normal;
+  }
+
+  span {
+    pointer-events: none;
+    display: inline-block;
+  }
+`;
