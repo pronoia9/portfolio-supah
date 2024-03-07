@@ -98,66 +98,6 @@ const GlobalStyles = createGlobalStyle`
     pointer-events: none
   }
 
-  .experiments {
-    -webkit-columns: 2;
-    column-count: 2
-  }
-
-  @media(max-width: 640px) {
-    .experiments {
-      -webkit-columns:1;
-      column-count: 1
-    }
-  }
-
-  .experiments .experiment {
-    font-size: 1.8rem;
-    font-weight: 500
-  }
-
-  .experiments .experiment a {
-    background: #fff;
-    padding: 1rem 0;
-    display: block;
-    position: relative;
-    z-index: 1;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    margin-top: -1px;
-    display: flex;
-    align-items: center
-  }
-
-  .experiments .experiment a img {
-    width: auto;
-    height: 60px;
-    margin-right: 10px
-  }
-
-  .experiments .experiment a:visited:after {
-    color: #000
-  }
-
-  .experiments .experiment a:after {
-    content: "âœ“";
-    position: absolute;
-    right: 10px;
-    color: #fff
-  }
-
-  .experiments .experiment em {
-    font-weight: 300;
-    font-size: 1.2rem;
-    font-style: normal;
-    display: inline-block;
-    width: 17px
-  }
-
-  .experiments .experiment span {
-    display: inline-block;
-    pointer-events: none
-  }
-
   section {
     opacity: 0
   }
