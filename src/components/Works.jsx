@@ -60,7 +60,7 @@ const Wrapper = styled.div`
   }
 
   a:after {
-    content: 'âœ“';
+    content: '✓';
     position: absolute;
     right: 10px;
     color: #fff;
