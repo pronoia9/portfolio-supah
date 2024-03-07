@@ -1,4 +1,5 @@
-import { showcase as data } from "/src/utils/data";
+import { Showcase } from "./Showcases";
+import { works as data } from "/src/utils/data";
 
 export const Works = () => {
   return (
@@ -10,7 +11,7 @@ export const Works = () => {
           const num = i + 1 < 10 ? `0${i + 1}` : i + 1;
           return (
             <div className='experiment' key={`experiment-${i}`}>
-              <Work name={`<em>${num}</em> ${exp.name}`} {...exp} />
+              <Showcase name={`<em>${num}</em> ${exp.name}`} {...exp} />
             </div>
           );
         })}
@@ -18,5 +19,3 @@ export const Works = () => {
     </section>
   );
 };
-
-const Work = () => {};
