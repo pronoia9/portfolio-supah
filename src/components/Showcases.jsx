@@ -22,7 +22,6 @@ export const Showcases = () => {
   );
 };
 
-// eslint-disable-next-line react/prop-types
 export const Showcase = ({ link, name, image }) => {
   const $root = useRef();
   const $overlay = useRef();
@@ -73,8 +72,7 @@ export const Showcase = ({ link, name, image }) => {
     <a ref={$root} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href={link} target='_blank'>
       {image && <img src={image} alt={name} />}
       <span className='link' ref={$link}>
-        {/* {HTMLParse(name)} */}
-        {name}
+        {name}{/* {HTMLParse(name)} */}
       </span>
       <span className='overlay' ref={$overlay} />
     </a>
