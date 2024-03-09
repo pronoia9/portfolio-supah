@@ -35,7 +35,7 @@ function App() {
         <Works />
         <Publications />
         <Awards />
-        {/* <Contacts /> */}
+        <Contacts />
         <br />
         <br />
         <br />
