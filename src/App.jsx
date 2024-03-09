@@ -34,7 +34,7 @@ function App() {
         <Showcases />
         <Works />
         <Publications />
-        {/* <Awards /> */}
+        <Awards />
         {/* <Contacts /> */}
         <br />
         <br />
