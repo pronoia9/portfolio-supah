@@ -27,8 +27,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: #fff;
-    color: #000;
+    background: var(--c-background);
+    color: var(--c-font);
     margin: 0;
     padding: 0;
     font-family: var(--font), var(--font-fallback);
@@ -42,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
 
   @media(max-width: 440px) {
     #root {
-      padding:4.4rem 2.5rem 6rem
+      padding: 4.4rem 2.5rem 6rem
     }
   }
 
