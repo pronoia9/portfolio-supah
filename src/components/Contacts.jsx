@@ -1,4 +1,3 @@
-import { ContactContainer } from './Containers';
 import { OverlayContainer } from '/src/components';
 import { contacts as data } from '/src/utils/data';
 
