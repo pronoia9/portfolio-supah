@@ -1,5 +1,4 @@
-import { ShowcaseContainer } from './Containers';
-import { OverlayContainer } from '/src/components';
+import { ShowcaseContainer, OverlayContainer } from '/src/components';
 import { showcase as data } from '/src/utils/data';
 
 export const Showcases = () => {
