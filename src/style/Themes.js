@@ -1,11 +1,13 @@
 export const themes = {
   dark: {
-    background: '',
-    font: '',
+    font: '#fff',
+    background: '#000',
+    overlay: '#fff',
   },
 
   light: {
-    background: '',
-    font: '',
+    font: '#000',
+    background: '#fff',
+    overlay: '#000',
   },
 };
