@@ -48,26 +48,26 @@ export const ShowcaseContainer = styled.div`
   }
 
   a {
-    background: #fff;
+    background: var(--c-background);
     padding: 1rem 0;
     display: block;
     position: relative;
     z-index: 1;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid var(--c-font);
+    border-bottom: 1px solid var(--c-font);
     margin-top: -1px;
     display: flex;
     align-items: center;
 
     &:visited:after {
-      color: #000;
+      color: var(--c-font);
     }
 
     &:after {
       content: '✓';
       position: absolute;
       right: 10px;
-      color: #fff;
+      color: var(--c-background);
 
       @media (max-width: 440px) {
         -webkit-transform: none !important;
