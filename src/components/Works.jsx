@@ -83,7 +83,7 @@ const WorksWrapper = styled.div`
   }
 `;
 
-export const Work = ({ i, link, name, image, ...props }) => {
+export const Work = ({ i, link, name, image }) => {
   const $root = useRef(),
     $overlay = useRef(),
     $link = useRef();
@@ -131,7 +131,7 @@ export const Work = ({ i, link, name, image, ...props }) => {
   };
 
   return (
-    <WorkItem className='work' {...props}>
+    <WorkItem className='work'>
       <a ref={$root} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href={link} target='_blank'>
         {image && <img src={image} alt={name} />}
         <span className='link' ref={$link}>
