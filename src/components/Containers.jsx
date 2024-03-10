@@ -33,7 +33,8 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
 };
 
 export const ShowcaseContainer = styled.div`
-  &, a {
+  &,
+  a {
     font-size: 3rem;
     font-weight: 500;
 
@@ -89,20 +90,6 @@ export const ShowcaseContainer = styled.div`
   span {
     pointer-events: none;
     display: inline-block;
-  }
-
-  .overlay {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    mix-blend-mode: difference;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    pointer-events: none;
   }
 `;
 
