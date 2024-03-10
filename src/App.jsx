@@ -3,11 +3,11 @@ import { ThemeProvider } from 'styled-components';
 import gsap from 'gsap';
 
 import { Works, Experiences, Showcases, Intro, Publications, Contacts, Awards } from '/src/components';
-import { getTheme, systemThemeChangeHandler } from '/src/utils/utils';
+import { getTheme, getSystemTheme, systemThemeChangeHandler } from '/src/utils/utils';
 import GlobalStyles from '/src/style/GlobalStyles';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(getSystemTheme);
 
   // Event listener for system theme change
   useEffect(() => {
@@ -17,12 +17,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    gsap.to('section', {
-      opacity: 1,
-      delay: 3,
-      ease: 'power3.out',
-      duration: 2,
-    });
+    gsap.to('section', { opacity: 1, delay: 3, ease: 'power3.out', duration: 2 });
   }, []);
 
   return (
