@@ -1,6 +1,15 @@
 import { useRef } from 'react';
 import styled from 'styled-components';
 import gsap from 'gsap';
+import { m } from 'framer-motion';
+
+import { sectionMotion } from '/src/assets/motion';
+
+export const Section = ({ children, ...props }) => (
+  <m.section {...sectionMotion} {...props}>
+    {children}
+  </m.section>
+);
 
 export const ShowcaseContainer = styled.div`
   a {
