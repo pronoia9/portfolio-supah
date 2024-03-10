@@ -39,42 +39,6 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
 };
 
 export const OverlayStyles = css`
-  a {
-    background: var(--c-background);
-    padding: 1rem 0;
-    display: block;
-    position: relative;
-    z-index: 1;
-    border-top: 1px solid var(--c-font);
-    border-bottom: 1px solid var(--c-font);
-    margin-top: -1px;
-    display: flex;
-    align-items: center;
-
-    @media (max-width: 440px) {
-      font-size: 2rem;
-    }
-
-    &:visited:after {
-      color: var(--c-font);
-    }
-
-    &:after {
-      content: '✓';
-      position: absolute;
-      right: 10px;
-      color: var(--c-background);
-
-      @media (max-width: 440px) {
-        -webkit-transform: none !important;
-        transform: none !important;
-        font-size: 1.5rem;
-        top: 15px;
-        right: 4px;
-      }
-    }
-  }
-
   span {
     pointer-events: none;
     display: inline-block;
@@ -150,4 +114,38 @@ export const ContactContainer = styled.li`
   }
 `;
 
-const Link = styled.a``;
+const Link = styled.a`
+  background: var(--c-background);
+  padding: 1rem 0;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--c-font);
+  border-bottom: 1px solid var(--c-font);
+  margin-top: -1px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 440px) {
+    font-size: 2rem;
+  }
+
+  &:visited:after {
+    color: var(--c-font);
+  }
+
+  &:after {
+    content: '✓';
+    position: absolute;
+    right: 10px;
+    color: var(--c-background);
+
+    @media (max-width: 440px) {
+      -webkit-transform: none !important;
+      transform: none !important;
+      font-size: 1.5rem;
+      top: 15px;
+      right: 4px;
+    }
+  }
+`;
