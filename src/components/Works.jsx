@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
-import { OverlayContainer } from '/src/components/Containers';
+import { WorkContainer, OverlayContainer } from '/src/components/Containers';
 import { works as data } from '/src/utils/data';
-import { WorkContainer } from './Containers';
 
 export const Works = () => {
   return (
