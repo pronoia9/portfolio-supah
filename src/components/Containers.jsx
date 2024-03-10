@@ -1,6 +1,48 @@
 import { useRef } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import gsap from 'gsap';
+
+export const ShowcaseContainer = styled.div`
+  a {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  img {
+    width: auto;
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  em {
+    font-weight: 300;
+    font-size: 2rem;
+    font-style: normal;
+  }
+`;
+
+export const WorkContainer = styled(ShowcaseContainer)`
+  a {
+    font-size: 1.8rem;
+
+    img {
+      height: 60px;
+    }
+  }
+
+  em {
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 17px;
+  }
+`;
+
+export const ContactContainer = styled.li`
+  a {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+`;
 
 // Props
 // showcase = name, link, image
@@ -38,82 +80,6 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
   );
 };
 
-export const OverlayStyles = css`
-  span {
-    pointer-events: none;
-    display: inline-block;
-  }
-
-  .link {
-    display: inline-block;
-
-    @media (max-width: 440px) {
-      -webkit-transform: translateX(4px) !important;
-      transform: translateX(4px) !important;
-    }
-  }
-
-  .overlay {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--c-overlay);
-    mix-blend-mode: difference;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    pointer-events: none;
-  }
-`;
-
-export const ShowcaseContainer = styled.div`
-  ${OverlayStyles}
-
-  a {
-    font-size: 3rem;
-    font-weight: 500;
-  }
-
-  img {
-    width: auto;
-    height: 80px;
-    margin-right: 10px;
-  }
-
-  em {
-    font-weight: 300;
-    font-size: 2rem;
-    font-style: normal;
-  }
-`;
-
-export const WorkContainer = styled(ShowcaseContainer)`
-  a {
-    font-size: 1.8rem;
-
-    img {
-      height: 60px;
-    }
-  }
-
-  em {
-    font-size: 1.2rem;
-    display: inline-block;
-    width: 17px;
-  }
-`;
-
-export const ContactContainer = styled.li`
-  ${OverlayStyles}
-
-  a {
-    font-size: 1.6rem;
-    font-weight: 300;
-  }
-`;
-
 const Link = styled.a`
   background: var(--c-background);
   padding: 1rem 0;
@@ -147,5 +113,33 @@ const Link = styled.a`
       top: 15px;
       right: 4px;
     }
+  }
+
+  span {
+    pointer-events: none;
+    display: inline-block;
+  }
+
+  .link {
+    display: inline-block;
+
+    @media (max-width: 440px) {
+      -webkit-transform: translateX(4px) !important;
+      transform: translateX(4px) !important;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--c-overlay);
+    mix-blend-mode: difference;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    pointer-events: none;
   }
 `;
