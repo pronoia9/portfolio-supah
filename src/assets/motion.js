@@ -1,18 +1,15 @@
-import { easeIn } from 'framer-motion';
-
 export const containerMotion = {
   initial: 'hidden',
+  animate: 'show',
   variants: {
     hidden: {},
     show: {
       transition: {
-        delay: 0.5,
-        // delayChildren: 3, // needed for intro
-        staggerChildren: 2,
+        delayChildren: 0.5,
+        staggerChildren: 0.75,
       },
     },
   },
-  animate: 'show',
 };
 
 export const sectionMotion = {
@@ -21,18 +18,6 @@ export const sectionMotion = {
     show: { opacity: 1 },
   },
   transition: { type: 'tween', duration: 2, ease: 'easeInOut' },
-};
-
-export const introMotion = {
-  variants: {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 },
-  },
-};
-
-export const svgMotion = {
-  initial: 'hidden',
-  animate: 'visible',
 };
 
 export const drawMotion = {
