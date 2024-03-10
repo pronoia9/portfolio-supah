@@ -12,12 +12,16 @@ export const Experiences = () => {
   );
 };
 
-export const Experience = ({ year, position, company, link }) => {
+export const Experience = ({ year, position, company, link, title, date, description }) => {
   return (
-    <ExpContainer className='cv-work'>
-      <div className='years'>{year}</div>
+    <Container className='cv-work'>
+      <div className='years'>
+        {year && year}
+        {title && date && `${title} - ${date}`}
+      </div>
+
       <h3>
-        {position}
+        {position && position}
         {company && (
           <>
             {' '}@{' '}
@@ -26,12 +30,17 @@ export const Experience = ({ year, position, company, link }) => {
             </a>
           </>
         )}
+        {description && (
+          <a href={link} target='_blank'>
+            {description}
+          </a>
+        )}
       </h3>
-    </ExpContainer>
+    </Container>
   );
 };
 
-export const ExpContainer = styled.div`
+export const Container = styled.div`
   display: block;
   padding: 2rem 0;
   font-size: 1.6rem;
