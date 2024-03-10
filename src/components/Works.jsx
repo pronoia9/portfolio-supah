@@ -16,7 +16,7 @@ export const Works = () => {
           const num = i + 1 < 10 ? `0${i + 1}` : i + 1;
           return (
             <WorksWrapper className='experiment' key={`experiment-${i}`}>
-              <Work name={`<em>${num}</em> ${exp.name}`} {...exp} />
+              <Work i={i} {...exp} />
             </WorksWrapper>
           );
         })}
@@ -84,10 +84,11 @@ const WorksWrapper = styled.div`
   }
 `;
 
-export const Work = ({ link, name, image, ...props }) => {
+export const Work = ({ i, link, name, image, ...props }) => {
   const $root = useRef(),
     $overlay = useRef(),
     $link = useRef();
+  const num = i + 1 < 10 ? `0${i + 1}` : i + 1;
 
   const handleMouseEnter = (e) => {
     const bounds = $root.current.getBoundingClientRect();
@@ -135,8 +136,7 @@ export const Work = ({ link, name, image, ...props }) => {
       <a ref={$root} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href={link} target='_blank'>
         {image && <img src={image} alt={name} />}
         <span className='link' ref={$link}>
-          {name}
-          {/* {HTMLParse(name)} */}
+          <em>{i && num}</em>{' '}{name}{/* {HTMLParse(name)} */}
         </span>
         <span className='overlay' ref={$overlay} />
       </a>
@@ -192,11 +192,12 @@ const WorkItem = styled.div`
     margin-right: 10px;
   }
 
-  em {
+  /* for Showcase numbering */
+  /* em {
     font-weight: 300;
     font-size: 2rem;
     font-style: normal;
-  }
+  } */
 
   span {
     pointer-events: none;
