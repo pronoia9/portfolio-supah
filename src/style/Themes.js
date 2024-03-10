@@ -1,7 +1,7 @@
 export const themes = {
   dark: {
     font: '#fff',
-    background: '#000',
+    background: '#131313',
     overlay: '#fff',
   },
 
