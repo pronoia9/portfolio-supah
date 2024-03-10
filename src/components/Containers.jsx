@@ -1,13 +1,15 @@
 import { useRef } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import gsap from 'gsap';
 
-// Incoming Data
+// Props
 // showcase = name, link, image
 // work     = name, link, image, tags, num
 // contact  = name, link
 export const OverlayContainer = ({ num, link, name, image, tags }) => {
-  const $root = useRef(), $overlay = useRef(), $link = useRef();
+  const $root = useRef(),
+    $overlay = useRef(),
+    $link = useRef();
 
   const handleMouseEnter = (e) => {
     const bounds = $root.current.getBoundingClientRect();
@@ -25,28 +27,18 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
   };
 
   return (
-    <a ref={$root} href={link} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <Link ref={$root} href={link} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {image && <img src={image} alt={name} />}
       <span className='link' ref={$link}>
         {num && <em>{num}</em>}
         {` ${name}`}
       </span>
       <span className='overlay' ref={$overlay} />
-    </a>
+    </Link>
   );
 };
 
-export const ShowcaseContainer = styled.div`
-  &,
-  a {
-    font-size: 3rem;
-    font-weight: 500;
-
-    @media (max-width: 440px) {
-      font-size: 2rem;
-    }
-  }
-
+export const OverlayStyles = css`
   a {
     background: var(--c-background);
     padding: 1rem 0;
@@ -58,6 +50,10 @@ export const ShowcaseContainer = styled.div`
     margin-top: -1px;
     display: flex;
     align-items: center;
+
+    @media (max-width: 440px) {
+      font-size: 2rem;
+    }
 
     &:visited:after {
       color: var(--c-font);
@@ -79,6 +75,43 @@ export const ShowcaseContainer = styled.div`
     }
   }
 
+  span {
+    pointer-events: none;
+    display: inline-block;
+  }
+
+  .link {
+    display: inline-block;
+
+    @media (max-width: 440px) {
+      -webkit-transform: translateX(4px) !important;
+      transform: translateX(4px) !important;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--c-overlay);
+    mix-blend-mode: difference;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    pointer-events: none;
+  }
+`;
+
+export const ShowcaseContainer = styled.div`
+  ${OverlayStyles}
+
+  a {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
   img {
     width: auto;
     height: 80px;
@@ -90,20 +123,12 @@ export const ShowcaseContainer = styled.div`
     font-size: 2rem;
     font-style: normal;
   }
-
-  span {
-    pointer-events: none;
-    display: inline-block;
-  }
 `;
 
 export const WorkContainer = styled(ShowcaseContainer)`
-  &,
   a {
     font-size: 1.8rem;
-  }
 
-  a {
     img {
       height: 60px;
     }
@@ -116,4 +141,13 @@ export const WorkContainer = styled(ShowcaseContainer)`
   }
 `;
 
-export const ContactContainer = styled(WorkContainer)``;
+export const ContactContainer = styled.li`
+  ${OverlayStyles}
+
+  a {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+`;
+
+const Link = styled.a``;
