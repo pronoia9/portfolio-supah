@@ -4,8 +4,7 @@ import gsap from 'gsap';
 import { m } from 'framer-motion';
 
 import { intro as data } from '/src/assets/data';
-import { svgMotion, drawMotion, containerMotion, introMotion } from '/src/assets/motion';
-
+import { sectionMotion, drawMotion } from '/src/assets/motion';
 
 export const Intro = () => {
   const $root = useRef(),
@@ -40,14 +39,12 @@ export const Intro = () => {
   // Event listener for window resize
   useEffect(() => {
     window.addEventListener('resize', handleResize);
-    () => {
-      window.removeEventListener('resize', handleResize);
-    };
+    () => { window.removeEventListener('resize', handleResize); };
   }, []);
 
   return (
-    <m.div ref={$root} {...containerMotion}>
-      <SVG ref={$svg} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 874.13 121' style={{ opacity: 0 }} {...svgMotion}>
+    <div ref={$root}>
+      <SVG ref={$svg} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 874.13 121' style={{ opacity: 0 }} {...sectionMotion}>
         <title>
           <h1>Hello</h1>
         </title>
@@ -78,7 +75,7 @@ export const Intro = () => {
         </m.g>
       </SVG>
 
-      <Container className='intro' ref={$intro}>
+      <IntroContainer className='intro' ref={$intro} {...sectionMotion}>
         <strong>{data.title}</strong>
         <br />
         {data.subtitle.map((subtitle, i) => (
@@ -88,8 +85,8 @@ export const Intro = () => {
             {/* : <a href='https://studiogusto.com' target='_blank'>studiogusto</a> */}
           </span>
         ))}
-      </Container>
-    </m.div>
+      </IntroContainer>
+    </div>
   );
 };
 
@@ -106,7 +103,7 @@ const SVG = styled(m.svg)`
   }
 `;
 
-const Container = styled(m.div)`
+const IntroContainer = styled(m.div)`
   opacity: 0;
   margin-top: 6rem;
   font-size: 2rem;
