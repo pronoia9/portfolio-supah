@@ -1,4 +1,4 @@
-import { OverlayContainer } from '/src/components';
+import { ContactContainer, OverlayContainer } from '/src/components';
 import { contacts as data } from '/src/utils/data';
 
 export const Contacts = () => {
@@ -7,9 +7,9 @@ export const Contacts = () => {
       <h2>Contacts</h2>
       <ul className='no-border'>
         {data.map((contact, i) => (
-          <li key={`contacts-${i}`}>
+          <ContactContainer key={`contacts-${i}`}>
             <OverlayContainer {...contact} />
-          </li>
+          </ContactContainer>
         ))}
       </ul>
     </section>
