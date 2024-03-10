@@ -8,6 +8,6 @@ export const themes = {
   light: {
     font: '#000',
     background: '#fff',
-    overlay: '#000',
+    overlay: '#fff',
   },
 };
