@@ -112,7 +112,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.6rem
   }
 
-  ul li,ul li a {
+  ul li, ul li a {
     padding: 1rem 0;
     border-bottom: 1px solid #000
   }
@@ -134,9 +134,6 @@ const GlobalStyles = createGlobalStyle`
   iframe {
     display: none!important
   }
-
-  /*# sourceMappingURL=main.8e896fda.chunk.css.map */
-
 `;
 
 export default GlobalStyles;
