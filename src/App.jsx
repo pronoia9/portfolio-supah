@@ -3,8 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import gsap from 'gsap';
 
 import { Works, Experiences, Showcases, Intro, Publications, Contacts, Awards } from '/src/components';
-import { getTheme, getSystemTheme, systemThemeChangeHandler } from '/src/utils/utils';
-import GlobalStyles from '/src/style/GlobalStyles';
+import { GlobalStyles, themes } from '/src/assets/GlobalStyles';
 
 function App() {
   const [theme, setTheme] = useState(getSystemTheme);
@@ -39,5 +38,10 @@ function App() {
     </ThemeProvider>
   );
 }
-
 export default App;
+
+const getSystemTheme = () => (window?.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+const systemThemeChangeHandler = (e, setTheme) => { setTheme(e.matches ? 'dark' : 'light'); };
+
+const getTheme = (theme) => (theme === 'light' ? themes.light : themes.dark);
