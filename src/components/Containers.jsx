@@ -2,6 +2,10 @@ import { useRef } from 'react';
 import styled from 'styled-components';
 import gsap from 'gsap';
 
+// Incoming Data
+// showcase = name, link, image
+// work     = name, link, image, tags, num
+// contact  = name, link
 export const OverlayContainer = ({ num, link, name, image, tags }) => {
   const $root = useRef(), $overlay = useRef(), $link = useRef();
 
