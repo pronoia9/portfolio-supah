@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { experiences as data } from '/src/utils/data';
+import { experiences as data } from '/src/assets/data';
 
 export const Experiences = () => {
   return (

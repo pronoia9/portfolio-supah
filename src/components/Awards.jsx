@@ -1,4 +1,4 @@
-import { awards as data } from '/src/utils/data';
+import { awards as data } from '/src/assets/data';
 
 export const Awards = () => {
   return (

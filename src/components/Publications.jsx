@@ -1,5 +1,5 @@
 import { Experience } from '/src/components';
-import { publications as data } from '/src/utils/data';
+import { publications as data } from '/src/assets/data';
 
 export const Publications = () => {
   return (

@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import styled from 'styled-components';
 
-import { intro as data } from '/src/utils/data';
+import { intro as data } from '/src/assets/data';
 
 export const Intro = () => {
   const $root = useRef();
