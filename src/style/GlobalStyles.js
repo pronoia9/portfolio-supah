@@ -12,8 +12,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --c-font: ${({ theme }) => theme.font};
     --c-background: ${({ theme }) => theme.background};    
+    --c-font: ${({ theme }) => theme.font};
     --c-overlay: ${({ theme }) => theme.overlay};
     --font: Matter;
     --font-fallback: Helvetica,Arial,sans-serif;
@@ -92,7 +92,7 @@ const GlobalStyles = createGlobalStyle`
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--c-background);
+    background: var(--c-overlay);
     mix-blend-mode: difference;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
