@@ -69,18 +69,18 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
   };
 
   return (
-    <Link ref={$root} href={link} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <OverlayLink ref={$root} href={link} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {image && <img src={image} alt={name} />}
       <span className='link' ref={$link}>
         {num && <em>{num}</em>}
         {` ${name}`}
       </span>
       <span className='overlay' ref={$overlay} />
-    </Link>
+    </OverlayLink>
   );
 };
 
-const Link = styled.a`
+const OverlayLink = styled.a`
   background: var(--c-background);
   padding: 1rem 0;
   display: block;
