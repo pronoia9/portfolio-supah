@@ -8,21 +8,22 @@ export const Works = () => {
     <section>
       <h2>{data.title}</h2>
       <p>{data.subtitle}</p>
-      <Container className='experiments'>
+
+      <WorksContainer className='experiments'>
         {data.data.map((exp, i) => {
           const num = i + 1 < 10 ? `0${i + 1}` : i + 1;
           return (
-            <Wrapper className='experiment' key={`experiment-${i}`}>
+            <WorkContainer className='experiment' key={`experiment-${i}`}>
               <Showcase name={`<em>${num}</em> ${exp.name}`} {...exp} />
-            </Wrapper>
+            </WorkContainer>
           );
         })}
-      </Container>
+      </WorksContainer>
     </section>
   );
 };
 
-const Container = styled.div`
+const WorksContainer = styled.div`
   -webkit-columns: 2;
   column-count: 2;
 
@@ -32,7 +33,7 @@ const Container = styled.div`
   }
 `;
 
-const Wrapper = styled.div`
+const WorkContainer = styled.div`
   font-size: 1.8rem;
   font-weight: 500;
 
