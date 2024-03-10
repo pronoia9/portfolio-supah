@@ -73,31 +73,6 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 500;
     margin: 0
   }
-  
-  .link {
-    display: inline-block
-  }
-
-  @media(max-width: 440px) {
-    .link {
-      -webkit-transform:translateX(4px)!important;
-      transform: translateX(4px)!important
-    }
-  }
-
-  .overlay {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--c-overlay);
-    mix-blend-mode: difference;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    pointer-events: none
-  }
 
   section {
     opacity: 0
