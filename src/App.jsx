@@ -39,7 +39,7 @@ function App() {
         <br />
         <br />
         <br />
-        <section className='goodbye'>Thank you 👋</section>
+        <section className='goodbye'>Thanks Supah 👋</section>
       </div>
     </ThemeProvider>
   );
