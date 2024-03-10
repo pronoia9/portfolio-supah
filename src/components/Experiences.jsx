@@ -1,14 +1,16 @@
 import styled from 'styled-components';
+
+import { Section } from '/src/components';
 import { experiences as data } from '/src/assets/data';
 
 export const Experiences = () => {
   return (
-    <section>
+    <Section>
       <h2>Experience</h2>
       {data.map((exp, i) => (
         <Experience key={`experience-${i}`} {...exp} />
       ))}
-    </section>
+    </Section>
   );
 };
 
