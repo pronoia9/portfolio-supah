@@ -1,3 +1,5 @@
+import { ContactContainer } from './Containers';
+import { OverlayContainer } from '/src/components';
 import { contacts as data } from '/src/utils/data';
 
 export const Contacts = () => {
@@ -6,17 +8,11 @@ export const Contacts = () => {
       <h2>Contacts</h2>
       <ul className='no-border'>
         {data.map((contact, i) => (
-          <Contact key={`contacts-${i}`} link={contact.link} name={contact.name} />
+          <li key={`contacts-${i}`}>
+            <OverlayContainer {...contact} />
+          </li>
         ))}
       </ul>
     </section>
-  );
-};
-
-export const Contact = ({ link, name }) => {
-  return (
-    <li>
-      {/* <Work link='https://www.shadertoy.com/user/supah' name='Shadertoy' /> */}
-    </li>
   );
 };
