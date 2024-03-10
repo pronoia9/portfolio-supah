@@ -44,7 +44,7 @@ export const Container = styled.div`
   display: block;
   padding: 2rem 0;
   font-size: 1.6rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--c-font);
 
   h3 {
     font-size: 1.8rem;
@@ -56,6 +56,6 @@ export const Container = styled.div`
   }
 
   a {
-    border-bottom: 1px dashed #000;
+    border-bottom: 1px dashed var(--c-font);
   }
 `;

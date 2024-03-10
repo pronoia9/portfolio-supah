@@ -93,12 +93,12 @@ const SVG = styled.svg`
   .cls-1 {
     stroke-width: 21px;
     fill: none;
-    stroke: #000;
+    stroke: var(--c-font);
     stroke-miterlimit: 10;
   }
 
   .cls-2 {
-    fill: #fff;
+    fill: var(--c-background);
   }
 `;
 
