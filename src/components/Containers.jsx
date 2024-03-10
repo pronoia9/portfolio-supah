@@ -40,7 +40,7 @@ export const ShowcaseContainer = styled.div`
   &,
   a {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
 
     @media (max-width: 440px) {
       font-size: 2rem;
