@@ -25,7 +25,7 @@ export const Works = () => {
 };
 
 const WorksContainer = styled.div`
-  -webkit-columns: 2;
+  /* -webkit-columns: 2; */
   column-count: 2;
 
   @media (max-width: 640px) {
