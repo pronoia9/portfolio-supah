@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-// import HTMLParse from 'react-html-parser';
 import styled from 'styled-components';
 import gsap from 'gsap';
 
@@ -136,7 +135,8 @@ export const Work = ({ i, link, name, image, ...props }) => {
       <a ref={$root} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href={link} target='_blank'>
         {image && <img src={image} alt={name} />}
         <span className='link' ref={$link}>
-          <em>{i && num}</em>{' '}{name}{/* {HTMLParse(name)} */}
+          {num && <em>{num}</em>}
+          {` ${name}`}
         </span>
         <span className='overlay' ref={$overlay} />
       </a>
