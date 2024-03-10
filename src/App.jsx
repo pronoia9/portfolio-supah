@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import gsap from 'gsap';
+import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 import { Works, Experiences, Showcases, Intro, Publications, Contacts, Awards } from '/src/components';
 import { GlobalStyles, themes } from '/src/assets/GlobalStyles';
+import { containerMotion } from '/src/assets/motion';
 
 function App() {
   const [theme, setTheme] = useState(getSystemTheme);
@@ -15,26 +16,24 @@ function App() {
     return () => { systemThemeWatcher.removeEventListener('change', systemThemeChangeHandler); };
   }, []);
 
-  useEffect(() => {
-    gsap.to('section', { opacity: 1, delay: 3, ease: 'power3.out', duration: 2 });
-  }, []);
-
   return (
     <ThemeProvider theme={getTheme(theme)}>
       <GlobalStyles />
-      <div>
-        <Intro />
-        <Experiences />
-        <Showcases />
-        <Works />
-        <Publications />
-        <Awards />
-        <Contacts />
-        <br />
-        <br />
-        <br />
-        <section className='goodbye'>Thanks Supah 👋</section>
-      </div>
+      <LazyMotion features={domAnimation}>
+        <m.div {...containerMotion}>
+          <Intro />
+          <Experiences />
+          <Showcases />
+          <Works />
+          <Publications />
+          <Awards />
+          <Contacts />
+          <br />
+          <br />
+          <br />
+          <section className='goodbye'>Thanks Supah 👋</section>
+        </m.div>
+      </LazyMotion>
     </ThemeProvider>
   );
 }
@@ -42,6 +41,8 @@ export default App;
 
 const getSystemTheme = () => (window?.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
-const systemThemeChangeHandler = (e, setTheme) => { setTheme(e.matches ? 'dark' : 'light'); };
+const systemThemeChangeHandler = (e, setTheme) => {
+  setTheme(e.matches ? 'dark' : 'light');
+};
 
 const getTheme = (theme) => (theme === 'light' ? themes.light : themes.dark);
