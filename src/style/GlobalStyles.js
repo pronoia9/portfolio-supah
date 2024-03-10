@@ -92,7 +92,7 @@ const GlobalStyles = createGlobalStyle`
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--c-overlay);
+    background: var(--c-background);
     mix-blend-mode: difference;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
