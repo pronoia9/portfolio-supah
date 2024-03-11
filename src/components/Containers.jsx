@@ -82,9 +82,10 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
   //   { scaleY: 0, transformOrigin: top ? '0 0' : '0 100%' },
   //   { scale: 1, duration: 0.5, ease: 'power3.out' }
   // );
-
-  // OUT
+  
   // gsap.killTweensOf([$overlay.current, $link.current]);
+  
+  // OUT
   // gsap.to(
   //   $link.current,
   //   { x: 0, duration: 0.3, ease: 'power3.out' }
