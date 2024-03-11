@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-import { WorkContainer, OverlayContainer } from '/src/components/Containers';
+import { Section, WorkContainer, OverlayContainer } from '/src/components';
 import { works as data } from '/src/assets/data';
 
 export const Works = () => {
   return (
-    <section>
+    <Section>
       <h2>{data.title}</h2>
       <p>{data.subtitle}</p>
 
@@ -16,7 +16,7 @@ export const Works = () => {
           </WorkContainer>
         ))}
       </Container>
-    </section>
+    </Section>
   );
 };
 

@@ -1,6 +1,14 @@
 import { useRef } from 'react';
 import styled from 'styled-components';
-import gsap from 'gsap';
+import { m, animate } from 'framer-motion';
+
+import { sectionMotion } from '/src/assets/motion';
+
+export const Section = ({ children, ...props }) => (
+  <m.section {...sectionMotion()} {...props}>
+    {children}
+  </m.section>
+);
 
 export const ShowcaseContainer = styled.div`
   a {
@@ -44,38 +52,38 @@ export const ContactContainer = styled.li`
   }
 `;
 
-// Props
-// showcase = name, link, image
-// work     = name, link, image, tags, num
-// contact  = name, link
 export const OverlayContainer = ({ num, link, name, image, tags }) => {
-  const $root = useRef(),
-    $overlay = useRef(),
-    $link = useRef();
+  const $root = useRef(), $overlay = useRef(), $link = useRef();
+
+  const getTop = (e) => {
+    const bounds = $root.current.getBoundingClientRect();
+    return e.clientY < bounds.y + bounds.height / 2;
+  };
 
   const handleMouseEnter = (e) => {
-    const bounds = $root.current.getBoundingClientRect();
-    const top = e.clientY < bounds.y + bounds.height / 2;
-    gsap.to($link.current, { x: '2rem', duration: 0.5, ease: 'power3.out' });
-    gsap.fromTo($overlay.current, { scaleY: 0, transformOrigin: top ? '0 0' : '0 100%' }, { scale: 1, duration: 0.5, ease: 'power3.out' });
+    // Animate the link
+    animate($link.current, { x: '2rem' }, { type: 'tween', duration: 0.5, ease: 'easeOut' });
+    // Animate the overlay
+    animate($overlay.current, { scaleY: 1, transformOrigin: getTop(e) ? 'top' : 'bottom' }, { type: 'tween', duration: 0.5, ease: 'easeOut' });
   };
 
   const handleMouseLeave = (e) => {
-    const bounds = $root.current.getBoundingClientRect();
-    const top = e.clientY < bounds.y + bounds.height / 2;
-    gsap.killTweensOf([$overlay.current, $link.current]);
-    gsap.to($link.current, { x: 0, duration: 0.3, ease: 'power3.out' });
-    gsap.to($overlay.current, { scaleY: 0, transformOrigin: top ? '0 0' : '0 100%', duration: 0.7, ease: 'power3.out' });
+    // Animate the link
+    animate($link.current, { x: 0 }, { type: 'tween', duration: 0.3, ease: 'easeOut' });
+    // Animate the overlay
+    animate($overlay.current, { scaleY: 0, transformOrigin: getTop(e) ? 'top' : 'bottom' }, { type: 'tween', duration: 0.7, ease: 'easeOut' });
   };
 
   return (
     <OverlayLink ref={$root} href={link} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {image && <img src={image} alt={name} />}
-      <span className='link' ref={$link}>
+
+      <m.span ref={$link} className='link'>
         {num && <em>{num}</em>}
         {` ${name}`}
-      </span>
-      <span className='overlay' ref={$overlay} />
+      </m.span>
+
+      <m.span ref={$overlay} className='overlay' />
     </OverlayLink>
   );
 };

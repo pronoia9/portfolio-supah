@@ -1,9 +1,9 @@
-import { ShowcaseContainer, OverlayContainer } from '/src/components';
+import { Section, ShowcaseContainer, OverlayContainer } from '/src/components';
 import { showcase as data } from '/src/assets/data';
 
 export const Showcases = () => {
   return (
-    <section>
+    <Section>
       <h2>{data.title}</h2>
       <p>{data.subtitle}</p>
 
@@ -14,6 +14,6 @@ export const Showcases = () => {
           </ShowcaseContainer>
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
