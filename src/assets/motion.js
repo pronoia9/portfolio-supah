@@ -49,3 +49,26 @@ export const pathMotion = {
     },
   },
 };
+
+export const linkMotion = (hover) => ({
+  initial: { x: 0 },
+  animate: {
+    x: hover ? '2rem' : 0,
+    transition: { type: 'tween', duration: hover ? 0.5 : 0.3, ease: 'easeInOut' },
+  },
+});
+
+export const overlayMotion = (hover, top) => ({
+  layoutId: 'overlay',
+  initial: { scaleY: 0, transformOrigin: top ? '0 0' : '0 100%' },
+  animate: {
+    scaleY: hover ? 1 : 0,
+    transformOrigin: top ? '0 0' : '0 100%',
+    transition: {
+      type: 'tween',
+      scaleY: 0,
+      duration: hover ? 0.5 : 0.7,
+      ease: 'easeInOut',
+    },
+  },
+});
