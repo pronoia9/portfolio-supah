@@ -62,28 +62,28 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
 
   const handleMouseEnter = (e) => {
     // Animate the link
-    animate($link.current, { x: '2rem' }, { type: 'tween', duration: 0.5, ease: 'easeOut' });
+    animate($link.current, { x: '2rem' }, { duration: 0.5 });
     // Animate the overlay
-    animate($overlay.current, { scaleY: 1, transformOrigin: getTop(e) ? 'top' : 'bottom' }, { type: 'tween', duration: 0.5, ease: 'easeOut' });
+    animate($overlay.current, { scaleY: 1, transformOrigin: getTop(e) ? 'top' : 'bottom' }, { duration: 0.5 });
   };
 
   const handleMouseLeave = (e) => {
     // Animate the link
-    animate($link.current, { x: 0 }, { type: 'tween', duration: 0.3, ease: 'easeOut' });
+    animate($link.current, { x: 0 }, { duration: 0.3 });
     // Animate the overlay
-    animate($overlay.current, { scaleY: 0, transformOrigin: getTop(e) ? 'top' : 'bottom' }, { type: 'tween', duration: 0.7, ease: 'easeOut' });
+    animate($overlay.current, { scaleY: 0, transformOrigin: getTop(e) ? 'top' : 'bottom' }, { duration: 0.7 });
   };
 
   return (
     <OverlayLink ref={$root} href={link} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {image && <img src={image} alt={name} />}
 
-      <m.span ref={$link} className='link'>
+      <m.span ref={$link} className='link' transition={{ type: 'tween', ease: 'easeOut' }}>
         {num && <em>{num}</em>}
         {` ${name}`}
       </m.span>
 
-      <m.span ref={$overlay} className='overlay' />
+      <m.span ref={$overlay} className='overlay' transition={{ type: 'tween', ease: 'easeOut' }} />
     </OverlayLink>
   );
 };
