@@ -1,9 +1,8 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import styled from 'styled-components';
-import gsap from 'gsap';
 import { m } from 'framer-motion';
 
-import { sectionMotion } from '/src/assets/motion';
+import { sectionMotion, overlayMotion, linkMotion } from '/src/assets/motion';
 
 export const Section = ({ children, ...props }) => (
   <m.section {...sectionMotion()} {...props}>
@@ -53,38 +52,58 @@ export const ContactContainer = styled.li`
   }
 `;
 
-// Props
-// showcase = name, link, image
-// work     = name, link, image, tags, num
-// contact  = name, link
 export const OverlayContainer = ({ num, link, name, image, tags }) => {
-  const $root = useRef(),
-    $overlay = useRef(),
-    $link = useRef();
+  const $root = useRef();
+  const [hover, setHover] = useState(false);
+  const [top, setTop] = useState(false);
+
+  const getTop = (e) => {
+    const bounds = $root.current.getBoundingClientRect();
+    return e.clientY < bounds.y + bounds.height / 2;
+  };
 
   const handleMouseEnter = (e) => {
-    const bounds = $root.current.getBoundingClientRect();
-    const top = e.clientY < bounds.y + bounds.height / 2;
-    gsap.to($link.current, { x: '2rem', duration: 0.5, ease: 'power3.out' });
-    gsap.fromTo($overlay.current, { scaleY: 0, transformOrigin: top ? '0 0' : '0 100%' }, { scale: 1, duration: 0.5, ease: 'power3.out' });
+    setHover(true);
+    setTop(getTop(e));
   };
 
   const handleMouseLeave = (e) => {
-    const bounds = $root.current.getBoundingClientRect();
-    const top = e.clientY < bounds.y + bounds.height / 2;
-    gsap.killTweensOf([$overlay.current, $link.current]);
-    gsap.to($link.current, { x: 0, duration: 0.3, ease: 'power3.out' });
-    gsap.to($overlay.current, { scaleY: 0, transformOrigin: top ? '0 0' : '0 100%', duration: 0.7, ease: 'power3.out' });
+    setHover(false);
+    setTop(getTop(e));
   };
+
+  // IN
+  // gsap.to(
+  //   $link.current,
+  //   { x: '2rem', duration: 0.5, ease: 'power3.out' }
+  // );
+  // gsap.fromTo(
+  //   $overlay.current,
+  //   { scaleY: 0, transformOrigin: top ? '0 0' : '0 100%' },
+  //   { scale: 1, duration: 0.5, ease: 'power3.out' }
+  // );
+
+  // OUT
+  // gsap.killTweensOf([$overlay.current, $link.current]);
+  // gsap.to(
+  //   $link.current,
+  //   { x: 0, duration: 0.3, ease: 'power3.out' }
+  // );
+  // gsap.to(
+  //   $overlay.current,
+  //   { scaleY: 0, transformOrigin: top ? '0 0' : '0 100%', duration: 0.7, ease: 'power3.out' }
+  // );
 
   return (
     <OverlayLink ref={$root} href={link} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {image && <img src={image} alt={name} />}
-      <span className='link' ref={$link}>
+
+      <m.span className='link' {...linkMotion(hover)}>
         {num && <em>{num}</em>}
         {` ${name}`}
-      </span>
-      <span className='overlay' ref={$overlay} />
+      </m.span>
+
+      <m.span className='overlay' {...overlayMotion(hover, top)} />
     </OverlayLink>
   );
 };
