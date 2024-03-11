@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { m } from 'framer-motion';
 
@@ -54,11 +54,13 @@ export const ContactContainer = styled.li`
 
 export const OverlayContainer = ({ num, link, name, image, tags }) => {
   const $root = useRef();
-  const [hover, setHover] = useState(false);
-  const [top, setTop] = useState(false);
+  const [hover, setHover] = useState(null);
+  const [top, setTop] = useState(null);
 
   const getTop = (e) => {
     const bounds = $root.current.getBoundingClientRect();
+    console.log('e.clientY < bounds.y   + bounds.height / 2');
+    console.log(`${e.clientY}       < ${bounds.y} + ${bounds.height}            / 2`);
     return e.clientY < bounds.y + bounds.height / 2;
   };
 
@@ -72,6 +74,13 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
     setTop(getTop(e));
   };
 
+  // useEffect(() => { }, [hover]);
+
+  //! DEBUGGING
+  useEffect(() => {
+    console.log(num, `${hover ? 'enter' : 'leave'} ${top ? 'top' : 'bottom'}`);
+  }, [hover]);
+
   // IN
   // gsap.to(
   //   $link.current,
@@ -82,9 +91,9 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
   //   { scaleY: 0, transformOrigin: top ? '0 0' : '0 100%' },
   //   { scale: 1, duration: 0.5, ease: 'power3.out' }
   // );
-  
+
   // gsap.killTweensOf([$overlay.current, $link.current]);
-  
+
   // OUT
   // gsap.to(
   //   $link.current,
@@ -104,7 +113,20 @@ export const OverlayContainer = ({ num, link, name, image, tags }) => {
         {` ${name}`}
       </m.span>
 
-      <m.span className='overlay' {...overlayMotion(hover, top)} />
+      <m.span
+        className='overlay'
+        initial={{ scaleY: 0, transformOrigin: top ? '0 0' : '0 100%' }}
+        animate={{
+          scaleY: hover ? 1 : 0,
+          transformOrigin: top ? '0 0' : '0 100%',
+          transition: {
+            type: 'tween',
+            scaleY: 0,
+            duration: hover ? 0.5 : 0.7,
+            ease: 'easeInOut',
+          },
+        }}
+      />
     </OverlayLink>
   );
 };
