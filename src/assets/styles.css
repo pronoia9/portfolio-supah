@@ -241,22 +241,14 @@ section {
   }
 }
 
-.cls-1,
-.cls-2 {
+.cls-1 {
   fill: none;
   stroke: var(--c-font);
   stroke-miterlimit: 10;
-}
-
-.cls-1 {
   stroke-width: 21px;
 }
 
 .cls-2 {
-  stroke-width: 25px;
-}
-
-.cls-3 {
   fill: var(--c-background);
 }
 
