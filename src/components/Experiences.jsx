@@ -1,5 +1,3 @@
-import styled from 'styled-components';
-
 import { Section } from '/src/components';
 import { experiences as data } from '/src/assets/data';
 
@@ -16,7 +14,7 @@ export const Experiences = () => {
 
 export const Experience = ({ year, position, company, link, title, date, description }) => {
   return (
-    <Container className='cv-work'>
+    <div className='cv-work'>
       <div className='years'>
         {year && year}
         {title && date && `${title} - ${date}`}
@@ -38,26 +36,6 @@ export const Experience = ({ year, position, company, link, title, date, descrip
           </a>
         )}
       </h3>
-    </Container>
+    </div>
   );
 };
-
-export const Container = styled.div`
-  display: block;
-  padding: 2rem 0;
-  font-size: 1.6rem;
-  border-bottom: 1px solid var(--c-font);
-
-  h3 {
-    font-size: 1.8rem;
-  }
-
-  .years {
-    font-size: 1.4rem;
-    margin-bottom: 3px;
-  }
-
-  a {
-    border-bottom: 1px dashed var(--c-font);
-  }
-`;
