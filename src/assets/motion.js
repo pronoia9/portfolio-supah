@@ -21,13 +21,31 @@ export const sectionMotion = {
 };
 
 export const drawMotion = {
-  hidden: { pathLength: 0, opacity: 0 },
-  visible: (i) => ({
-    pathLength: 1,
-    opacity: 1,
-    transition: {
-      pathLength: { delay: 1 + i * 0.5, type: 'spring', duration: 1.5, bounce: 0 },
-      opacity: { dela: 1 + i * 0.5, duration: 0.01 },
+  variants: {
+    hidden: { pathLength: 0, opacity: 0 },
+    show: {
+      pathLength: 1,
+      opacity: 1,
+      transition: {
+        // pathLength: { delay: 0, type: 'spring', duration: 1.3, bounce: 0 },
+        // opacity: { delay: 0, duration: 1.3 },
+        delayChildren: 0.5,
+        staggerChildren: 0.15,
+      },
     },
-  }),
+  },
+};
+
+export const pathMotion = {
+  variants: {
+    hidden: { pathLength: 0 },
+    show: {
+      pathLength: 1,
+      transition: {
+        type: 'tween',
+        duration: 1.3,
+        ease: 'easeOut',
+      },
+    },
+  },
 };
