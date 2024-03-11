@@ -1,4 +1,4 @@
-import { Section, ShowcaseContainer, OverlayContainer } from '/src/components';
+import { Section, OverlayContainer } from '/src/components';
 import { showcase as data } from '/src/assets/data';
 
 export const Showcases = () => {
@@ -9,9 +9,9 @@ export const Showcases = () => {
 
       <div className='works'>
         {data.data.map((work, i) => (
-          <ShowcaseContainer key={`showcase-${i}`} className='work'>
+          <div key={`showcase-${i}`} className='work'>
             <OverlayContainer {...work} />
-          </ShowcaseContainer>
+          </div>
         ))}
       </div>
     </Section>
