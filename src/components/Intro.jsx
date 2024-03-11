@@ -1,5 +1,4 @@
 import { useRef, useEffect } from 'react';
-import styled from 'styled-components';
 import { m } from 'framer-motion';
 
 import { intro as data } from '/src/assets/data';
@@ -28,7 +27,7 @@ export const Intro = () => {
 
   return (
     <div ref={$root}>
-      <SVG ref={$svg} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 874.13 121' {...sectionMotion()}>
+      <m.svg ref={$svg} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 874.13 121' {...sectionMotion()}>
         <title>
           <h1>Hello</h1>
         </title>
@@ -60,9 +59,9 @@ export const Intro = () => {
             {...pathMotion}
           />
         </m.g>
-      </SVG>
+      </m.svg>
 
-      <IntroContainer className='intro' ref={$intro} {...sectionMotion({ delay: 3 })}>
+      <m.div className='intro' ref={$intro} {...sectionMotion({ delay: 3 })}>
         <strong>{data.title}</strong>
         <br />
         {data.subtitle.map((subtitle, i) => (
@@ -72,42 +71,8 @@ export const Intro = () => {
             {/* : <a href='https://studiogusto.com' target='_blank'>studiogusto</a> */}
           </span>
         ))}
-      </IntroContainer>
+      </m.div>
     </div>
   );
 };
 
-const SVG = styled(m.svg)`
-  opacity: 0;
-
-  .cls-1 {
-    stroke-width: 21px;
-    fill: none;
-    stroke: var(--c-font);
-    stroke-miterlimit: 10;
-  }
-
-  .cls-2 {
-    fill: var(--c-background);
-  }
-`;
-
-const IntroContainer = styled(m.div)`
-  opacity: 0;
-  margin-top: 6rem;
-  font-size: 2rem;
-  line-height: 1.3;
-
-  strong {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 300;
-  }
-
-  @media (max-width: 440px) {
-    strong {
-      font-size: 2.6rem;
-    }
-  }
-`;
