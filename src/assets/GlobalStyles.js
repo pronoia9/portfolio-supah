@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const themes = {
   dark: {
     font: '#fff',
-    background: '#131313',
+    background: '#202124',
     overlay: '#fff',
   },
 
