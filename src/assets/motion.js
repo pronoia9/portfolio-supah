@@ -2,23 +2,23 @@ export const containerMotion = {
   initial: 'hidden',
   animate: 'show',
   variants: {
-    hidden: {},
+    hidden: { opacity: 0 },
     show: {
-      transition: {
-        delayChildren: 0.5,
-        staggerChildren: 0.75,
-      },
+      opacity: 1,
+      transition: { delay: 0, delayChildren: 0.5, staggerChildren: 2 },
     },
   },
 };
 
-export const sectionMotion = {
+export const sectionMotion = (transition) => ({
   variants: {
     hidden: { opacity: 0 },
-    show: { opacity: 1 },
+    show: {
+      opacity: 1,
+      transition: { type: 'tween', duration: 2, ease: 'easeInOut', ...transition },
+    },
   },
-  transition: { type: 'tween', duration: 2, ease: 'easeInOut' },
-};
+});
 
 export const drawMotion = {
   variants: {

@@ -6,7 +6,10 @@ import { intro as data } from '/src/assets/data';
 import { sectionMotion, drawMotion, pathMotion } from '/src/assets/motion';
 
 export const Intro = () => {
-  const $root = useRef(), $svg = useRef(), $intro = useRef(), $animate = useRef();
+  const $root = useRef(),
+    $svg = useRef(),
+    $intro = useRef(),
+    $animate = useRef();
 
   const handleResize = () => {
     const width = $root.current.clientWidth;
@@ -18,12 +21,14 @@ export const Intro = () => {
   useEffect(() => {
     handleResize();
     window.addEventListener('resize', handleResize);
-    () => { window.removeEventListener('resize', handleResize); };
+    () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (
     <div ref={$root}>
-      <SVG ref={$svg} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 874.13 121' {...sectionMotion}>
+      <SVG ref={$svg} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 874.13 121' {...sectionMotion()}>
         <title>
           <h1>Hello</h1>
         </title>
@@ -57,7 +62,7 @@ export const Intro = () => {
         </m.g>
       </SVG>
 
-      <IntroContainer className='intro' ref={$intro} {...sectionMotion}>
+      <IntroContainer className='intro' ref={$intro} {...sectionMotion({ delay: 3 })}>
         <strong>{data.title}</strong>
         <br />
         {data.subtitle.map((subtitle, i) => (

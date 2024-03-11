@@ -6,7 +6,7 @@ import { m } from 'framer-motion';
 import { sectionMotion } from '/src/assets/motion';
 
 export const Section = ({ children, ...props }) => (
-  <m.section {...sectionMotion} {...props}>
+  <m.section {...sectionMotion()} {...props}>
     {children}
   </m.section>
 );
