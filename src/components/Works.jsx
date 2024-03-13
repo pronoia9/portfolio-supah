@@ -1,5 +1,5 @@
-import { Section, OverlayContainer } from '/src/components';
-import { works as data } from '/src/assets/data';
+import { Section, OverlayContainer } from '.';
+import { works as data } from '../assets/data';
 
 export const Works = () => {
   return (

@@ -1,5 +1,5 @@
-import { Section } from '/src/components';
-import { awards as data } from '/src/assets/data';
+import { Section } from '.';
+import { awards as data } from '../assets/data';
 
 export const Awards = () => {
   return (

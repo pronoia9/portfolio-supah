@@ -1,5 +1,5 @@
-import { Section, Experience } from '/src/components';
-import { publications as data } from '/src/assets/data';
+import { Section, Experience } from '.';
+import { publications as data } from '../assets/data';
 
 export const Publications = () => {
   return (

@@ -1,5 +1,5 @@
-import { Section, OverlayContainer } from '/src/components';
-import { contacts as data } from '/src/assets/data';
+import { Section, OverlayContainer } from '.';
+import { contacts as data } from '../assets/data';
 
 export const Contacts = () => {
   return (

@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { m, animate } from 'framer-motion';
 
-import { sectionMotion } from '/src/assets/motion';
+import { sectionMotion } from '../assets/motion';
 
 export const Section = ({ children, ...props }) => (
   <m.section {...sectionMotion()} {...props}>

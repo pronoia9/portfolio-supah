@@ -1,8 +1,8 @@
 import { useRef, useEffect } from 'react';
 import { m } from 'framer-motion';
 
-import { intro as data } from '/src/assets/data';
-import { sectionMotion, drawMotion, pathMotion } from '/src/assets/motion';
+import { intro as data } from '../assets/data';
+import { sectionMotion, drawMotion, pathMotion } from '../assets/motion';
 
 export const Intro = () => {
   const $root = useRef(),

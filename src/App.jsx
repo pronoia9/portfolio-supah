@@ -1,7 +1,7 @@
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 
-import { Works, Experiences, Showcases, Intro, Publications, Contacts, Awards } from '/src/components';
-import { containerMotion } from '/src/assets/motion';
+import { Works, Experiences, Showcases, Intro, Publications, Contacts, Awards } from './components';
+import { containerMotion } from './assets/motion';
 
 function App() {
   return (

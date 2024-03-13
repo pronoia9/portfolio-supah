@@ -1,5 +1,5 @@
-import { Section, OverlayContainer } from '/src/components';
-import { showcase as data } from '/src/assets/data';
+import { Section, OverlayContainer } from '.';
+import { showcase as data } from '../assets/data';
 
 export const Showcases = () => {
   return (
