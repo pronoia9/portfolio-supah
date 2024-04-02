@@ -54,97 +54,97 @@ export const showcase = {
     {
       name: 'Nascent Design',
       link: 'https://nascentdesign.com',
-      image: '../assets/images/nascentdesign.webp',
+      image: '/images/nascentdesign.webp',
     },
     {
       name: 'Boom&bloom',
       link: 'https://boomandbloom.com',
-      image: '../assets/images/boomandbloom.webp',
+      image: '/images/boomandbloom.webp',
     },
     {
       name: 'Studiogusto.com',
       link: 'https://studiogusto.com',
-      image: '../assets/images/studiogusto.webp',
+      image: '/images/studiogusto.webp',
     },
     {
       name: 'Seacat - Rossinavi',
       link: 'https://seacat.rossinavi.it',
-      image: '../assets/images/seacat.webp',
+      image: '/images/seacat.webp',
     },
     {
       name: 'Blue - Rossinavi',
       link: 'https://blue.rossinavi.it',
-      image: '../assets/images/blue.webp',
+      image: '/images/blue.webp',
     },
     {
       name: 'Peptone',
       link: 'https://peptone.io',
-      image: '../assets/images/peptone.webp',
+      image: '/images/peptone.webp',
     },
     // {
     //   name: 'Beauty Sphere',
     //   link: 'https://beautysphere.com',
-    //   image: '../assets/images/beautysphere.webp'
+    //   image: '/images/beautysphere.webp'
     // },
     {
       name: 'Ghost Unicorns',
       link: 'https://www.ghostunicorns.com',
-      image: '../assets/images/ghostunicorns.webp',
+      image: '/images/ghostunicorns.webp',
     },
     // {
     //   name: 'Sterling',
     //   link: 'https://www.sterling.it/en',
-    //   image: '../assets/images/sterling.webp'
+    //   image: '/images/sterling.webp'
     // },
     // {
     //   name: 'Asics - Mindup Lifter',
     //   link: 'https://minduplifter.asics.com',
-    //   image: '../assets/images/asics.webp'
+    //   image: '/images/asics.webp'
     // },
     /*  {
     name: 'Coca Cola - Game <em>(view it on mobile)</em>',
     link: 'http://cocacola.wearetesting.it',
-    image: '../assets/images/cocacola.webp'
+    image: '/images/cocacola.webp'
   }, */
     // {
     //   name: 'Oneiric - Rossinavi',
     //   link: 'https://oneiric.rossinavi.it',
-    //   image: '../assets/images/oneiric.webp'
+    //   image: '/images/oneiric.webp'
     // },
     // {
     //   name: 'Sgrappa',
     //   link: 'https://www.sgrappa.com',
-    //   image: '../assets/images/sgrappa.webp'
+    //   image: '/images/sgrappa.webp'
     // },
     /* {
     name: 'Marison Ray',
     link: 'https://www.marisonray.com',
-    image: '../assets/images/marisonray.webp'
+    image: '/images/marisonray.webp'
   }, */
     /* {
     name: 'Henge',
     link: 'https://www.henge07.com',
-    image: '../assets/images/henge.webp'
+    image: '/images/henge.webp'
   }, */
     /* {
     name: 'Turn',
     link: 'https://www.turnhr.tech',
-    image: '../assets/images/turn.webp',
+    image: '/images/turn.webp',
   }, */
     // {
     //   name: 'Play 2',
     //   link: 'https://play2.studiogusto.com',
-    //   image: '../assets/images/play2.webp',
+    //   image: '/images/play2.webp',
     // },
     /* {
     name: 'Fabrizio Milesi',
     link: 'https://fabriziomilesi.com',
-    image: '../assets/images/fabriziomilesi.webp',
+    image: '/images/fabriziomilesi.webp',
   },
   {
     name: 'Platek',
     link: 'https://www.platek.eu',
-    image: '../assets/images/platek.webp',
+    image: '/images/platek.webp',
   }, */
   ],
 };
@@ -157,415 +157,415 @@ export const works = {
     name: 'Arrow',
     link: 'https://www.supah.it/arrow/',
     tags: ['webgl', 'threejs', 'shaders'],
-    image: '../assets/images/arrow.webp',
+    image: '/images/arrow.webp',
   }, */
     {
       name: 'Asics Poster',
       link: 'https://www.supah.it/asics-poster/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/asics-poster.webp',
+      image: '/images/asics-poster.webp',
     },
     /* {
     name: 'Audio Visualizer',
     link: 'https://www.shadertoy.com/view/3dGyRh',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/audio-visualizer.webp',
+    image: '/images/audio-visualizer.webp',
   }, */
     {
       name: 'Biglia',
       link: 'https://supahfunk.github.io/biglia/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/biglia.webp',
+      image: '/images/biglia.webp',
     },
     {
       name: 'Breathe 1',
       link: 'https://www.supah.it/breathe/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/breathe-ball.webp',
+      image: '/images/breathe-ball.webp',
     },
     /* {
     name: 'Breathe 2',
     link: 'https://codepen.io/supah/full/OJXJgZq',
     tags: ['canvas', 'codepen'],
-    image: '../assets/images/breathe-lines.webp',
+    image: '/images/breathe-lines.webp',
   }, */
     {
       name: 'Breathe 2 glsl',
       link: 'https://www.shadertoy.com/view/NddXzH',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/breathe-glsl.webp',
+      image: '/images/breathe-glsl.webp',
     },
     /* {
     name: 'Caustics',
     link: 'https://www.shadertoy.com/view/sdV3zh',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/caustics.webp',
+    image: '/images/caustics.webp',
   }, */
     /* {
     name: 'Circle Inception',
     link: 'https://gy799n.csb.app/',
     tags: ['canvas', 'react'],
-    image: '../assets/images/circle-inception.webp',
+    image: '/images/circle-inception.webp',
   }, */
     {
       name: 'Chroma Gradients',
       link: 'https://www.shadertoy.com/view/mtKfDG',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/chroma-gradients.webp',
+      image: '/images/chroma-gradients.webp',
     },
     {
       name: 'Carousel with drag and wheel',
       link: 'https://codepen.io/supah/pen/xxJMbbg',
       tags: ['css', 'codepen'],
-      image: '../assets/images/carousel-drag-wheel.webp',
+      image: '/images/carousel-drag-wheel.webp',
     },
     {
       name: 'Countdown',
       link: 'https://codepen.io/supah/full/abVGjVq',
       tags: ['svg', 'codepen'],
-      image: '../assets/images/countdown.webp',
+      image: '/images/countdown.webp',
     },
     /* {
     name: 'Curl',
     link: 'https://www.supah.it/curl/',
     tags: ['webgl', 'threejs', 'shaders'],
-    image: '../assets/images/curl.webp',
+    image: '/images/curl.webp',
   }, */
     /* {
     name: 'Desert Snake',
     link: 'https://www.shadertoy.com/view/tlyyzK',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/desert-snake.webp',
+    image: '/images/desert-snake.webp',
   }, */
     {
       name: 'Curly Gradient Line',
       link: 'https://www.shadertoy.com/view/Dt23RK',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/curly-gradient-line.webp',
+      image: '/images/curly-gradient-line.webp',
     },
     {
       name: 'Discoteq',
       link: 'https://www.shadertoy.com/view/fdV3zW',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/discotec.webp',
+      image: '/images/discotec.webp',
     },
     {
       name: 'Discoteq 2',
       link: 'https://www.shadertoy.com/view/DtXfDr',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/discoteq2.webp',
+      image: '/images/discoteq2.webp',
     },
     {
       name: 'Drop Skin',
       link: 'https://codepen.io/supah/full/qBEvEaG',
       tags: ['canvas', 'codepen'],
-      image: '../assets/images/drop-skin.webp',
+      image: '/images/drop-skin.webp',
     },
     {
       name: 'Erba',
       link: 'https://www.supah.it/erba/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/erba.webp',
+      image: '/images/erba.webp',
     },
     {
       name: 'Eye',
       link: 'https://www.shadertoy.com/view/csl3R4',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/eye.webp',
+      image: '/images/eye.webp',
     },
     {
       name: 'Fading Balls',
       link: 'https://codepen.io/supah/full/yLermNo',
       tags: ['webgl', 'threejs', 'shaders', 'codepen'],
-      image: '../assets/images/fading-balls.webp',
+      image: '/images/fading-balls.webp',
     },
     {
       name: 'Flying Lotus',
       link: 'https://codepen.io/supah/full/GRgOgpM',
       tags: ['canvas', 'codepen'],
-      image: '../assets/images/flying-lotus.webp',
+      image: '/images/flying-lotus.webp',
     },
     {
       name: 'Flowfield Circle',
       link: 'https://codepen.io/supah/pen/JjzGQYp',
       tags: ['canvas', 'codepen'],
-      image: '../assets/images/flowfield-circle.webp',
+      image: '/images/flowfield-circle.webp',
     },
     {
       name: 'Flowfield Triangle',
       link: 'https://codepen.io/supah/pen/jOJqLRv',
       tags: ['canvas', 'codepen'],
-      image: '../assets/images/flowfield-triangle.webp',
+      image: '/images/flowfield-triangle.webp',
     },
     {
       name: 'Frosted Glass',
       link: 'https://www.shadertoy.com/view/7tyyDy',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/froted-glass.webp',
+      image: '/images/froted-glass.webp',
     },
     {
       name: 'Ghosted O',
       link: 'https://www.shadertoy.com/view/NtyyWW',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/ghosted-o.webp',
+      image: '/images/ghosted-o.webp',
     },
     {
       name: 'Glitchbrush',
       link: 'https://www.supah.it/glitchbrush/',
       tags: ['canvas', 'codepen'],
-      image: '../assets/images/glitchbrush.webp',
+      image: '/images/glitchbrush.webp',
     },
     /* {
     name: 'GLSL Geometric Experiment #1',
     link: 'https://www.shadertoy.com/view/7syczd',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/geometric-1.webp',
+    image: '/images/geometric-1.webp',
   }, */
     {
       name: 'GLSL Geometric Experiment #2',
       link: 'https://www.shadertoy.com/view/sscXRN',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/geometric-2.webp',
+      image: '/images/geometric-2.webp',
     },
     {
       name: 'Gradient Snake',
       link: 'https://www.shadertoy.com/view/dtfXDr',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/gradient-snake.webp',
+      image: '/images/gradient-snake.webp',
     },
     /* {
     name: 'Gradient Snake v2',
     link: 'https://www.shadertoy.com/view/DlB3Ry',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/gradient-snake-2.webp',
+    image: '/images/gradient-snake-2.webp',
   }, */
     /* {
     name: 'Halo',
     link: 'https://www.shadertoy.com/view/fdSBDD',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/halo.webp',
+    image: '/images/halo.webp',
   }, */
     {
       name: 'Infinite',
       link: 'https://www.supah.it/infinite/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/infinite.webp',
+      image: '/images/infinite.webp',
     },
     /* {
     name: 'Infinity Grid',
     link: 'https://www.supah.it/infinity-grid/',
     tags: ['webgl', 'threejs', 'shaders'],
-    image: '../assets/images/infinity-grid.webp',
+    image: '/images/infinity-grid.webp',
   }, */
     {
       name: 'Inside Outside',
       link: 'https://www.supah.it/inside-outside/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/inside-outside.webp',
+      image: '/images/inside-outside.webp',
     },
     {
       name: 'Jelly Buttons',
       link: 'https://fzird.csb.app/',
       tags: ['css', 'react'],
-      image: '../assets/images/jelly-buttons.webp',
+      image: '/images/jelly-buttons.webp',
     },
     {
       name: 'Knotipse',
       link: 'https://www.supah.it/knotipse/',
       tags: ['canvas'],
-      image: '../assets/images/knotipse.webp',
+      image: '/images/knotipse.webp',
     },
     /* {
     name: 'Loader Gooey',
     link: 'https://www.shadertoy.com/view/flKczt',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/loader-gooey.webp',
+    image: '/images/loader-gooey.webp',
   }, */
     /* {
     name: 'Laser Game 1',
     link: 'https://www.shadertoy.com/view/fdcSzH',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/lasergame-1.webp',
+    image: '/images/lasergame-1.webp',
   }, */
     {
       name: 'Laser Game 2',
       link: 'https://www.shadertoy.com/view/ss3XR8',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/lasergame-2.webp',
+      image: '/images/lasergame-2.webp',
     },
     /* {
     name: 'Lights race',
     link: 'https://www.shadertoy.com/view/sscSWf',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/lightsrace.webp',
+    image: '/images/lightsrace.webp',
   }, */
     /* {
     name: 'Loop noise glsl',
     link: 'https://www.shadertoy.com/view/wdffRl',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/loopnoise-glsl.webp',
+    image: '/images/loopnoise-glsl.webp',
   }, */
     {
       name: 'Lotus',
       link: 'https://codepen.io/supah/full/PomKKMB',
       tags: ['css', 'codepen'],
-      image: '../assets/images/lotus.webp',
+      image: '/images/lotus.webp',
     },
     {
       name: 'Magma',
       link: 'https://www.supah.it/magma/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/magma.webp',
+      image: '/images/magma.webp',
     },
     /* {
     name: 'Mask with mouse glsl',
     link: 'https://www.shadertoy.com/view/7tGGWD',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/mask-mouse-glsl.webp',
+    image: '/images/mask-mouse-glsl.webp',
   }, */
     /* {
     name: 'Mitosys SVG',
     link: 'https://codepen.io/supah/full/oaEZqg',
     tags: ['svg', 'codepen'],
-    image: '../assets/images/mitosys.webp',
+    image: '/images/mitosys.webp',
   }, */
     {
       name: 'Mouse Condensation',
       link: 'https://www.shadertoy.com/view/7lcfDM',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/mouse-condensation.webp',
+      image: '/images/mouse-condensation.webp',
     },
     /* {
     name: 'Noisey Lines',
     link: 'https://www.shadertoy.com/view/7dcSzN',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/noisey-lines.webp',
+    image: '/images/noisey-lines.webp',
   }, */
     {
       name: 'Noisey Lines 2',
       link: 'https://www.shadertoy.com/view/DsfGRB',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/noisey-lines-2.webp',
+      image: '/images/noisey-lines-2.webp',
     },
     {
       name: 'Okay Dev',
       link: 'https://codepen.io/supah/full/zYBNxEL',
       tags: ['canvas', 'codepen'],
-      image: '../assets/images/okay-dev.webp',
+      image: '/images/okay-dev.webp',
     },
     {
       name: 'Oval',
       link: 'https://www.supah.it/oval/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/oval.webp',
+      image: '/images/oval.webp',
     },
     {
       name: 'Parametric Spider',
       link: 'https://codepen.io/supah/full/vYdwbQK',
       tags: ['canvas', 'codepen'],
-      image: '../assets/images/parametric-spider.webp',
+      image: '/images/parametric-spider.webp',
     },
     /* {
     name: 'Petals',
     link: 'https://www.shadertoy.com/view/fdtSW2',
     tags: ['webgl', 'shadertoy', 'shaders'],
-    image: '../assets/images/petals.webp'
+    image: '/images/petals.webp'
   }, */
     {
       name: 'Playground',
       link: 'https://9cenu.csb.app/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/playground.webp',
+      image: '/images/playground.webp',
     },
     /* {
     name: 'Quarantine',
     link: 'https://www.shadertoy.com/view/3slyRN',
     tags: ['webgl', 'threejs', 'shaders'],
-    image: '../assets/images/quarantine-ball.webp'
+    image: '/images/quarantine-ball.webp'
   }, */
     /* {
     name: 'Radial Lines',
     link: 'https://www.shadertoy.com/view/dsXXWf',
     tags: ['webgl', 'threejs', 'shaders'],
-    image: '../assets/images/radial-lines.webp'
+    image: '/images/radial-lines.webp'
   }, */
     /* {
     name: 'React Supah Slider',
     link: 'https://www.supah.it/react-supah-slider/',
     tags: ['react', 'slider'],
-    image: '../assets/images/react-supah-slider.webp'
+    image: '/images/react-supah-slider.webp'
   }, */
     {
       name: 'Refraction',
       link: 'https://www.supah.it/refraction/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/refraction.webp',
+      image: '/images/refraction.webp',
     },
     /* {
     name: 'Ring Twist',
     link: 'https://miig4.csb.app/',
     tags: ['webgl', 'threejs', 'shaders'],
-    image: '../assets/images/ring-twist.webp'
+    image: '/images/ring-twist.webp'
   }, */
     {
       name: 'Scrolling Rainbow',
       link: 'https://codepen.io/supah/full/rNYeREV',
       tags: ['css', 'codepen'],
-      image: '../assets/images/scrolling-rainbow.webp',
+      image: '/images/scrolling-rainbow.webp',
     },
     {
       name: 'Shader Gizmo',
       link: 'https://www.supah.it/shadergizmo',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/shader-gizmo.webp',
+      image: '/images/shader-gizmo.webp',
     },
     {
       name: 'Smokey',
       link: 'https://codepen.io/supah/full/mdPGNQr',
       tags: ['canvas', 'codepen'],
-      image: '../assets/images/smokey.webp',
+      image: '/images/smokey.webp',
     },
     {
       name: 'Spiral',
       link: 'https://www.supah.it/spiral/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/vortex.webp',
+      image: '/images/vortex.webp',
     },
     {
       name: 'The Line Game',
       link: 'https://codepen.io/supah/full/povxOYJ',
       tags: ['canvas', 'codepen'],
-      image: '../assets/images/the-line-game.webp',
+      image: '/images/the-line-game.webp',
     },
     {
       name: 'Torus Spiral',
       link: 'https://www.supah.it/torus-spiral/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/torus-spiral.webp',
+      image: '/images/torus-spiral.webp',
     },
     {
       name: 'Twist & Shout',
       link: 'https://www.supah.it/twistshout/',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/twist-shout.webp',
+      image: '/images/twist-shout.webp',
     },
     /* {
     name: 'Vortex Particles',
     link: 'https://www.supah.it/vortex-particles/',
     tags: ['webgl', 'threejs', 'shaders'],
-    image: '../assets/images/vortex-particles.webp'
+    image: '/images/vortex-particles.webp'
   }, */
     {
       name: 'Watch',
       link: 'https://www.shadertoy.com/view/ddSGzd',
       tags: ['webgl', 'shadertoy', 'shaders'],
-      image: '../assets/images/watch.webp',
+      image: '/images/watch.webp',
     },
     {
       name: 'Waves are lines',
       link: 'https://www.shadertoy.com/view/ctKyRV',
       tags: ['webgl', 'threejs', 'shaders'],
-      image: '../assets/images/waves-are-lines.webp',
+      image: '/images/waves-are-lines.webp',
     },
   ],
 };
