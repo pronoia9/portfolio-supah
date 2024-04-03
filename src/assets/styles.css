@@ -198,7 +198,7 @@ h3 {
 }
 
 .experiments .experiment a:after {
-  content: 'âœ“';
+  content: '✓';
   position: absolute;
   right: 10px;
   color: var(--c-background);
